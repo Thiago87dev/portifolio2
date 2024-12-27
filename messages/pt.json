@@ -1,0 +1,17 @@
+{
+    "Home": {
+      "title": "Olá Mundo",
+      "description": "Tutorial de como manipular i18n com base no caminho da rota ou domínio com Nextjs v15"
+    },
+    "Navbar":{
+    "title":"Thiago Alves",
+    "darkMode": "Modo Escuro",
+    "lightMode": "Modo Claro",
+    "titleBtnLanguage":"Trocar para inglês",
+    "home": "Início",
+    "projects": "projetos",
+    "about": "sobre",
+    "contact": "contato"
+  }
+  }
+  

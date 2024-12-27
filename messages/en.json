@@ -1,0 +1,16 @@
+{
+  "Home": {
+    "title": "Hello World!",
+    "description": "Tutorial of how to manipulate i18n based on route path or domain with  Nextjs v15"
+  },
+  "Navbar":{
+    "title":"Thiago Alves",
+    "darkMode": "Dark Mode",
+    "lightMode": "Light Mode",
+    "titleBtnLanguage":"Switch to Portuguese",
+    "home": "home",
+    "projects": "projects",
+    "about": "about",
+    "contact": "contact"
+  }
+}
