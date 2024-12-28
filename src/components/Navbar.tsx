@@ -2,6 +2,8 @@
 import { FaMoon } from "react-icons/fa";
 import { FaSun } from "react-icons/fa";
 import { IoLanguage } from "react-icons/io5";
+import { IoMenu } from "react-icons/io5";
+import { IoClose } from "react-icons/io5";
 
 import { useEffect, useState } from "react";
 import { Link, usePathname, useRouter } from "@/i18n/routing";
@@ -21,7 +23,8 @@ const Navbar = () => {
 
   const t = useTranslations("Navbar");
 
-  const [activeItem, setActiveItem] = useState('');
+  const [activeItem, setActiveItem] = useState("");
+  const [activeMenu, setActiveMenu] = useState(true);
 
   const toggleDarkMode = () => {
     dispatch(toggleDarkModeRedux());
@@ -52,9 +55,17 @@ const Navbar = () => {
     const currentPath = window.location.pathname;
     if (currentPath.includes("/pt")) {
       router.push(pathname, { locale: "en" });
-    }else  {
+    } else {
       router.push(pathname, { locale: "pt" });
     }
+  };
+
+  const handleToggleMenu = () => {
+    setActiveMenu(!activeMenu);
+  };
+
+  const handleCloseMenu = () => {
+    setActiveMenu(false);
   };
 
   const menuItems = [
@@ -65,16 +76,65 @@ const Navbar = () => {
   ];
 
   return (
-    <nav className="md:px-32 w-full py-6 bg-colorBgNavLight text-colorTextLight dark:text-colorTextDark dark:bg-colorBgNavDark">
+    <nav className="relative   md:px-32 w-full py-6 bg-colorBgNavLight text-colorTextLight dark:text-colorTextDark dark:bg-colorBgNavDark">
       <div className="flex justify-between items-center">
         <Link href="/">
           <h1 className="font-extrabold  md:text-2xl">{t("title")}</h1>
         </Link>
-        <div>
+        <div className="flex justify-center lg:hidden">
+          {activeMenu ? (
+            <div onClick={handleCloseMenu}>
+              <IoClose size={30} />
+            </div>
+          ) : (
+            <div onClick={handleToggleMenu}>
+              <IoMenu size={30} />
+            </div>
+          )}
+          <div
+            className={` overflow-hidden absolute top-16 transition-all duration-500 ease-in-out dark:bg-colorHighlightsLight bg-colorHighlightsDark w-72 rounded-lg ${
+              activeMenu
+                ? " opacity-100 h-96"
+                : "l opacity-0 h-0"
+            }`}
+          >
+            <ul className="flex h-full flex-col justify-around items-center text-lg font-semibold ">
+              {menuItems.map((item, index) => (
+                <li
+                  onClick={() => {
+                    setActiveItem(item.label);
+                    setActiveMenu(false)
+                  }}
+                  className="relative cursor-pointer uppercase"
+                  key={index}
+                >
+                  {activeItem === item.label && (
+                    <div className="absolute left-0 right-0 h-1 bg-colorHighlightsLight dark:bg-colorHighlightsDark top-[20px] translate-y-2"></div>
+                  )}
+                  <Link href={item.path}>
+                    <span
+                      className={`${
+                        activeItem === item.label
+                          ? "opacity-100 text-xl"
+                          : "opacity-90"
+                      }`}
+                    >
+                      {item.label}
+                    </span>
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+        </div>
+        <div className="hidden lg:flex">
           <ul className="flex justify-around text-lg font-semibold xl:gap-28 lg:gap-10 ">
             {menuItems.map((item, index) => (
               <li
-                onClick={() => setActiveItem(item.label)}
+                onClick={() => {
+                  setActiveItem(item.label);
+                  setActiveMenu(false)
+                }}
                 className="relative cursor-pointer uppercase"
                 key={index}
               >
@@ -82,13 +142,15 @@ const Navbar = () => {
                   <div className="absolute left-0 right-0 h-1 bg-colorHighlightsLight dark:bg-colorHighlightsDark top-[20px] translate-y-2"></div>
                 )}
                 <Link href={item.path}>
-                <span
-                  className={`${
-                    activeItem === item.label ? "opacity-100 text-xl" : "opacity-90"
-                  }`}
-                >
-                  {item.label}
-                </span>
+                  <span
+                    className={`${
+                      activeItem === item.label
+                        ? "opacity-100 text-xl"
+                        : "opacity-90"
+                    }`}
+                  >
+                    {item.label}
+                  </span>
                 </Link>
               </li>
             ))}
