@@ -76,108 +76,117 @@ const Navbar = () => {
   ];
 
   return (
-    <nav className="relative   md:px-32 w-full py-6 bg-colorBgNavLight text-colorTextLight dark:text-colorTextDark dark:bg-colorBgNavDark">
-      <div className="flex justify-between items-center">
-        <Link href="/">
-          <h1 className="font-extrabold  md:text-2xl">{t("title")}</h1>
-        </Link>
-        <div className="flex justify-center lg:hidden">
-          {activeMenu ? (
-            <div onClick={handleCloseMenu}>
-              <IoClose size={30} />
-            </div>
-          ) : (
-            <div onClick={handleToggleMenu}>
-              <IoMenu size={30} />
-            </div>
-          )}
+    <nav className="relative flex flex-col items-center w-full bg-colorBgNavLight text-colorTextLight dark:text-colorTextDark dark:bg-colorBgNavDark">
+      <div className="flex flex-col w-full max-w-[1220px] px-6">
+        <div className="flex items-center py-1 justify-between gap-2 select-none border-b-2 border-solid border-gray-500">
           <div
-            className={` overflow-hidden absolute top-16 transition-all duration-500 ease-in-out dark:bg-colorHighlightsLight bg-colorHighlightsDark w-72 rounded-lg ${
-              activeMenu
-                ? " opacity-100 h-96"
-                : "l opacity-0 h-0"
-            }`}
+            title={t("titleBtnLanguage")}
+            onClick={handleLanguage}
+            className=" flex items-center gap-4"
           >
-            <ul className="flex h-full flex-col justify-around items-center text-lg font-semibold ">
-              {menuItems.map((item, index) => (
-                <li
-                  onClick={() => {
-                    setActiveItem(item.label);
-                    setActiveMenu(false)
-                  }}
-                  className="relative cursor-pointer uppercase"
-                  key={index}
-                >
-                  {activeItem === item.label && (
-                    <div className="absolute left-0 right-0 h-1 bg-colorHighlightsLight dark:bg-colorHighlightsDark top-[20px] translate-y-2"></div>
-                  )}
-                  <Link href={item.path}>
-                    <span
-                      className={`${
-                        activeItem === item.label
-                          ? "opacity-100 text-xl"
-                          : "opacity-90"
-                      }`}
-                    >
-                      {item.label}
-                    </span>
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </div>
-        </div>
-        <div className="hidden lg:flex">
-          <ul className="flex justify-around text-lg font-semibold xl:gap-28 lg:gap-10 ">
-            {menuItems.map((item, index) => (
-              <li
-                onClick={() => {
-                  setActiveItem(item.label);
-                  setActiveMenu(false)
-                }}
-                className="relative cursor-pointer uppercase"
-                key={index}
-              >
-                {activeItem === item.label && (
-                  <div className="absolute left-0 right-0 h-1 bg-colorHighlightsLight dark:bg-colorHighlightsDark top-[20px] translate-y-2"></div>
-                )}
-                <Link href={item.path}>
-                  <span
-                    className={`${
-                      activeItem === item.label
-                        ? "opacity-100 text-xl"
-                        : "opacity-90"
-                    }`}
-                  >
-                    {item.label}
-                  </span>
-                </Link>
-              </li>
-            ))}
-          </ul>
-        </div>
-        <div className="flex items-center gap-2 select-none">
-          <div onClick={toggleDarkMode} className="cursor-pointer">
-            {darkMode ? (
-              <p className="pr-1">
-                <FaMoon />
-              </p>
-            ) : (
-              <p>
-                <FaSun size={20} />
-              </p>
-            )}
-          </div>
-          <div className="flex items-center gap-6">
-            <div className="font-semibold text-sm md:text-lg">
-              {darkMode ? <p>{t("darkMode")}</p> : <p>{t("lightMode")}</p>}
+            <div className="font-semibold text-sm md:text-lg  cursor-pointer">
+              {t("language")}
             </div>
-            <div
-              title={t("titleBtnLanguage")}
-              onClick={handleLanguage}
-              className="cursor-pointer"
-            >
+            <div className=" cursor-pointer">
               <IoLanguage size={30} />
+            </div>
+          </div>
+          <div onClick={toggleDarkMode} className="flex items-center gap-4">
+            <div className="cursor-pointer">
+              {darkMode ? (
+                <p className="pr-1">
+                  <FaMoon />
+                </p>
+              ) : (
+                <p>
+                  <FaSun size={20} />
+                </p>
+              )}
+            </div>
+            <div className="flex items-center gap-6">
+              <div className="font-semibold text-sm md:text-lg cursor-pointer">
+                {darkMode ? <p>{t("darkMode")}</p> : <p>{t("lightMode")}</p>}
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="flex py-5 justify-between w-full ">
+          <div className="flex  w-full justify-between items-center">
+            <Link href="/">
+              <h1 className="font-extrabold  md:text-2xl">{t("title")}</h1>
+            </Link>
+            <div className="flex relative justify-center md:hidden">
+              {activeMenu ? (
+                <div onClick={handleCloseMenu}>
+                  <IoClose size={30} />
+                </div>
+              ) : (
+                <div onClick={handleToggleMenu}>
+                  <IoMenu size={30} />
+                </div>
+              )}
+              <div
+                className={` overflow-hidden absolute top-6 -left-64 transition-all duration-500 ease-in-out dark:bg-colorHighlightsLight bg-colorHighlightsDark w-72 rounded-lg ${
+                  activeMenu ? " opacity-100 h-96" : "l opacity-0 h-0"
+                }`}
+              >
+                <ul className="flex h-full flex-col justify-around items-center text-lg font-semibold ">
+                  {menuItems.map((item, index) => (
+                    <li
+                      onClick={() => {
+                        setActiveItem(item.label);
+                        setActiveMenu(false);
+                      }}
+                      className="relative cursor-pointer uppercase"
+                      key={index}
+                    >
+                      {activeItem === item.label && (
+                        <div className="absolute left-0 right-0 h-1 bg-colorHighlightsLight dark:bg-colorHighlightsDark top-[20px] translate-y-2"></div>
+                      )}
+                      <Link href={item.path}>
+                        <span
+                          className={`${
+                            activeItem === item.label
+                              ? "opacity-100 text-xl"
+                              : "opacity-90"
+                          }`}
+                        >
+                          {item.label}
+                        </span>
+                      </Link>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            </div>
+            <div className="hidden md:flex">
+              <ul className="flex justify-around text-lg font-semibold md:gap-10 ">
+                {menuItems.map((item, index) => (
+                  <li
+                    onClick={() => {
+                      setActiveItem(item.label);
+                      setActiveMenu(false);
+                    }}
+                    className="relative cursor-pointer uppercase"
+                    key={index}
+                  >
+                    {activeItem === item.label && (
+                      <div className="absolute left-0 right-0 h-1 bg-colorHighlightsLight dark:bg-colorHighlightsDark top-[20px] translate-y-2"></div>
+                    )}
+                    <Link href={item.path}>
+                      <span
+                        className={`${
+                          activeItem === item.label
+                            ? "opacity-100 text-xl"
+                            : "opacity-90"
+                        }`}
+                      >
+                        {item.label}
+                      </span>
+                    </Link>
+                  </li>
+                ))}
+              </ul>
             </div>
           </div>
         </div>
