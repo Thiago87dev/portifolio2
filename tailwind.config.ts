@@ -11,12 +11,16 @@ export default {
     extend: {
       colors: {
         colorBgLight: "#F5F5F5",
+        colorBg2Light: "#f7f4f1",
+        colorBg3Light: "#f0e9e3",
         colorBgNavLight: "rgba(255, 255, 255, 0.9)",
         colorTextLight: "#212121 ",
         colorHighlightsLight:"#6200EE",
         colorLinksLight: "#03DAC5",
 
         colorBgDark: "#232323",
+        colorBg2Dark: "#2c2c2c",
+        colorBg3Dark: "#1b1b1b",
         colorBgNavDark: "rgba(39, 34, 37, 0.9)",
         colorTextDark: "#FAFAFA ",
         colorHighlightsDark:"#BB86FC",

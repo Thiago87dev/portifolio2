@@ -76,9 +76,9 @@ const Navbar = () => {
   ];
 
   return (
-    <nav className="relative flex flex-col items-center w-full bg-colorBgNavLight text-colorTextLight dark:text-colorTextDark dark:bg-colorBgNavDark">
-      <div className="flex flex-col w-full max-w-[1220px] px-6">
-        <div className="flex items-center py-1 justify-between gap-2 select-none border-b-2 border-solid border-gray-500">
+    <nav className=" flex flex-col items-center w-full bg-transparent text-colorTextLight dark:text-colorTextDark fixed select-none">
+      <div className="flex flex-col w-full items-center max-w-[1360px] ">
+        <div className="flex items-center w-full max-w-[1220px] px-4 py-1 justify-between  ">
           <div
             title={t("titleBtnLanguage")}
             onClick={handleLanguage}
@@ -110,27 +110,58 @@ const Navbar = () => {
             </div>
           </div>
         </div>
-        <div className="flex py-5 justify-between w-full ">
-          <div className="flex  w-full justify-between items-center">
-            <Link href="/">
-              <h1 className="font-extrabold  md:text-2xl">{t("title")}</h1>
-            </Link>
-            <div className="flex relative justify-center md:hidden">
-              {activeMenu ? (
-                <div onClick={handleCloseMenu}>
-                  <IoClose size={30} />
+        <div className="flex py-5 justify-center w-full max-w-[1440px] border-y-[1px] border-solid border-gray-600">
+          <div className=" flex justify-between w-full max-w-[1220px] px-4">
+            <div className="flex w-full  max-w-[1220px] justify-between items-center">
+              <Link href="/">
+                <h1 className="font-extrabold  md:text-2xl">{t("title")}</h1>
+              </Link>
+              <div className="flex relative justify-center md:hidden">
+                {activeMenu ? (
+                  <div onClick={handleCloseMenu}>
+                    <IoClose size={30} />
+                  </div>
+                ) : (
+                  <div onClick={handleToggleMenu}>
+                    <IoMenu size={30} />
+                  </div>
+                )}
+                <div
+                  className={` overflow-hidden absolute top-6 -left-64 transition-all duration-500 ease-in-out dark:bg-colorHighlightsLight bg-colorHighlightsDark w-72 rounded-lg ${
+                    activeMenu ? " opacity-100 h-96" : "l opacity-0 h-0"
+                  }`}
+                >
+                  <ul className="flex h-full flex-col justify-around items-center text-lg font-semibold ">
+                    {menuItems.map((item, index) => (
+                      <li
+                        onClick={() => {
+                          setActiveItem(item.label);
+                          setActiveMenu(false);
+                        }}
+                        className="relative cursor-pointer uppercase"
+                        key={index}
+                      >
+                        {activeItem === item.label && (
+                          <div className="absolute left-0 right-0 h-1 bg-colorHighlightsLight dark:bg-colorHighlightsDark top-[20px] translate-y-2"></div>
+                        )}
+                        <Link href={item.path}>
+                          <span
+                            className={`${
+                              activeItem === item.label
+                                ? "opacity-100 text-xl"
+                                : "opacity-90"
+                            }`}
+                          >
+                            {item.label}
+                          </span>
+                        </Link>
+                      </li>
+                    ))}
+                  </ul>
                 </div>
-              ) : (
-                <div onClick={handleToggleMenu}>
-                  <IoMenu size={30} />
-                </div>
-              )}
-              <div
-                className={` overflow-hidden absolute top-6 -left-64 transition-all duration-500 ease-in-out dark:bg-colorHighlightsLight bg-colorHighlightsDark w-72 rounded-lg ${
-                  activeMenu ? " opacity-100 h-96" : "l opacity-0 h-0"
-                }`}
-              >
-                <ul className="flex h-full flex-col justify-around items-center text-lg font-semibold ">
+              </div>
+              <div className="hidden md:flex">
+                <ul className="flex justify-around text-lg font-semibold md:gap-10 ">
                   {menuItems.map((item, index) => (
                     <li
                       onClick={() => {
@@ -158,35 +189,6 @@ const Navbar = () => {
                   ))}
                 </ul>
               </div>
-            </div>
-            <div className="hidden md:flex">
-              <ul className="flex justify-around text-lg font-semibold md:gap-10 ">
-                {menuItems.map((item, index) => (
-                  <li
-                    onClick={() => {
-                      setActiveItem(item.label);
-                      setActiveMenu(false);
-                    }}
-                    className="relative cursor-pointer uppercase"
-                    key={index}
-                  >
-                    {activeItem === item.label && (
-                      <div className="absolute left-0 right-0 h-1 bg-colorHighlightsLight dark:bg-colorHighlightsDark top-[20px] translate-y-2"></div>
-                    )}
-                    <Link href={item.path}>
-                      <span
-                        className={`${
-                          activeItem === item.label
-                            ? "opacity-100 text-xl"
-                            : "opacity-90"
-                        }`}
-                      >
-                        {item.label}
-                      </span>
-                    </Link>
-                  </li>
-                ))}
-              </ul>
             </div>
           </div>
         </div>
