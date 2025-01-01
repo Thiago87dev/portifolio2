@@ -114,7 +114,7 @@ const Navbar = () => {
           <div className=" flex justify-between w-full max-w-[1220px] px-4">
             <div className="flex w-full  max-w-[1220px] justify-between items-center">
               <Link href="/">
-                <h1 className="font-extrabold  md:text-2xl">{t("title")}</h1>
+                <h1 className="font-extrabold  md:text-2xl">&lt;{t("title")}/&gt;</h1>
               </Link>
               <div className="flex relative justify-center md:hidden">
                 {activeMenu ? (
