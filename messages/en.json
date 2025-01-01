@@ -1,7 +1,11 @@
 {
   "Home": {
-    "title": "Hello World!",
-    "description": "Tutorial of how to manipulate i18n based on route path or domain with  Nextjs v15"
+    "title": "Thiago Alves",
+    "description": "I develop on the frontend with HTML, CSS, JavaScript, TypeScript, React, Next.js and Tailwind. On the backend, I work with Python and Django, creating complete, modern and efficient applications.",
+    "iam":"I am a fullstack developer focused on React and Python",
+    "iCreateWebsites":"I create websites",
+    "myResume":"My resume",
+    "downloadResume":"Download resume"
   },
   "Navbar":{
     "title":"Thiago Alves",
