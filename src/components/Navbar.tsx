@@ -24,7 +24,7 @@ const Navbar = () => {
   const t = useTranslations("Navbar");
 
   const [activeItem, setActiveItem] = useState("");
-  const [activeMenu, setActiveMenu] = useState(true);
+  const [activeMenu, setActiveMenu] = useState(false);
 
   const toggleDarkMode = () => {
     dispatch(toggleDarkModeRedux());
@@ -64,10 +64,6 @@ const Navbar = () => {
     setActiveMenu(!activeMenu);
   };
 
-  const handleCloseMenu = () => {
-    setActiveMenu(false);
-  };
-
   const menuItems = [
     { label: t("home"), path: "/" },
     { label: t("projects"), path: "/projects" },
@@ -76,7 +72,7 @@ const Navbar = () => {
   ];
 
   return (
-    <nav className=" flex flex-col items-center w-full bg-transparent text-colorTextLight dark:text-colorTextDark fixed select-none">
+    <nav className=" flex flex-col items-center w-full bg-colorBgNavLight dark:bg-colorBgNavDark text-colorTextLight dark:text-colorTextDark fixed select-none">
       <div className="flex flex-col w-full items-center max-w-[1360px] ">
         <div className="flex items-center w-full max-w-[1220px] px-4 py-1 justify-between  ">
           <div
@@ -114,16 +110,17 @@ const Navbar = () => {
           <div className=" flex justify-between w-full max-w-[1220px] px-4">
             <div className="flex w-full  max-w-[1220px] justify-between items-center">
               <Link href="/">
-                <h1 className="font-extrabold  md:text-2xl">&lt;{t("title")}/&gt;</h1>
+                <h1 className="group font-extrabold  md:text-2xl"><span className="ml-0 mr-1 group-hover:mr-0 group-hover:ml-1">&lt;</span>{t("title")}<span className="ml-1 group-hover:ml-0">/&gt;</span></h1>
               </Link>
               <div className="flex relative justify-center md:hidden">
                 {activeMenu ? (
-                  <div onClick={handleCloseMenu}>
+                  <div onClick={handleToggleMenu}>
                     <IoClose size={30} />
                   </div>
                 ) : (
                   <div onClick={handleToggleMenu}>
                     <IoMenu size={30} />
+                    
                   </div>
                 )}
                 <div

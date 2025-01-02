@@ -11,23 +11,23 @@ const poppins = Poppins({
 const Home = () => {
   const t = useTranslations("Home"); // declare the hook passing into parameter a context name
   return (
-    <div className="dark:bg-colorBg2Dark flex justify-center w-full pt-32 dark:text-colorTextDark text-colorTextLight  h-screen">
-      <div className="w-[1204px] flex justify-between ">
+    <div className="dark:bg-colorBg2Dark flex justify-center w-full pt-16 md:pt-32 dark:text-colorTextDark text-colorTextLight  h-screen">
+      <div className="w-[1204px] flex items-center md:items-start flex-col md:flex-row justify-between px-2 lg:px-0">
         <div className="pt-24">
           <div>
-            <p className="italic text-xl">{t("iCreateWebsites")}</p>
-            <h1 className="font-bold text-[100px] leading-none">
+            <p className="flex justify-center sm:justify-start italic text-xl">{t("iCreateWebsites")}</p>
+            <h1 className="flex text-center md:text-left font-bold text-[70px] lg:text-[100px] leading-none">
               {t("title")}
             </h1>
           </div>
-          <div className="ml-24 mt-14 w-[580px] border-l-2 border-solid pl-14 py-4 border-colorHighlightsLight dark:border-colorHighlightsDark">
+          <div className="lg:ml-24 md:ml-12 ml-1 mt-14 lg:w-[580px] md:w-[480px] w-full border-l-2 border-solid md:pl-14 pl-2 py-4 border-colorHighlightsLight dark:border-colorHighlightsDark">
             <div>
-              <h2 className={`text-3xl ${poppins.className}`}>{t("iam")}</h2>
+              <h2 className={`text-3xl ${poppins.className}`}>{t("iam")} <span className="font-bold">{t("react")}</span> {t("and")} <span className="font-bold">{t("python")}</span></h2>
               <p className="mt-10 text-lg">{t("description")}</p>
             </div>
-            <div className="flex flex-col mt-10 items-end">
-              <div>
-                <Button title={t("downloadResume")} width="w-[380px]" />
+            <div className="flex flex-col w-full mt-10 items-end">
+              <div className="w-full sm:w-[380px]  md:w-[266px] lg:w-[380px]">
+                <Button title={t("downloadResume")} />
               </div>
             </div>
           </div>
@@ -36,9 +36,9 @@ const Home = () => {
           <Image
             src={"/images/photo2.jpeg"}
             alt="My photo"
-            width={420}
-            height={420}
-            className="rounded-tr-[200px] w-[470px] h-[800px] rounded-bl-[200px]"
+            width={440}
+            height={440}
+            className="lg:rounded-tr-[200px] lg:rounded-bl-[200px] lg:mt-0 rounded-tr-[200px] rounded-bl-[200px] mt-24"
           />
         </div>
       </div>
