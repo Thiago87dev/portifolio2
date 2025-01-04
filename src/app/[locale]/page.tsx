@@ -15,7 +15,7 @@ const Home = () => {
 
   return (
     <div>
-      <div className="dark:bg-colorBg2Dark flex justify-center w-full pt-16 md:pt-32 dark:text-colorTextDark text-colorTextLight  h-screen">
+      <div className="dark:bg-colorBg2Dark bg-colorBgLight flex justify-center w-full pt-16 md:pt-32 dark:text-colorTextDark text-colorTextLight min-h-screen">
         <div className="w-[1204px] flex items-center md:items-start flex-col md:flex-row justify-between px-2 lg:px-0">
           <div className="pt-24">
             <div>
@@ -52,13 +52,13 @@ const Home = () => {
           </div>
         </div>
       </div>
-      <div className="dark:bg-colorBg3Dark flex flex-col items-center justify-center w-full pt-16 md:pt-16 dark:text-colorTextDark text-colorTextLight h-screen">
-        <div className="flex items-start mb-20 text-5xl font-semibold  w-[1204px]">
-          <h2 className="w-2/4 border-b-4 dark:border-colorHighlightsDark border-colorHighlightsLight">
+      <div className="dark:bg-colorBg3Dark bg-colorBg3Light flex flex-col items-center justify-center w-full pt-16 md:pt-16 dark:text-colorTextDark text-colorTextLight min-h-screen">
+        <div className="flex px-4 lg:px-0 items-start mb-20 text-5xl font-semibold w-full max-w-[1204px]">
+          <h2 className="w-2/4  pb-1 border-b-4 dark:border-colorHighlightsDark border-colorHighlightsLight">
             Habilidades
           </h2>
         </div>
-        <div className="grid grid-cols-5 gap-6 w-[1204px] ">
+        <div className="grid lg:grid-cols-5 md:grid-cols-4 sm:grid-cols-3 lg:px-0 px-4 grid-cols-2 gap-6 w-full max-w-[1204px] ">
           {skillList.map((item, index) => (
             <div key={index} className="flex justify-center">
               <Skills

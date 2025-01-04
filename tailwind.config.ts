@@ -25,8 +25,8 @@ export default {
         colorLinksLight: "#03DAC5",
 
         colorBgDark: "#232323",
-        colorBg2Dark: "#2c2c2c",
-        colorBg3Dark: "#1b1b1b",
+        colorBg2Dark: "#2C2C2C",
+        colorBg3Dark: "#1B1B1B",
         colorBgNavDark: "rgba(39, 34, 37, 0.9)",
         colorTextDark: "#FAFAFA ",
         colorHighlightsDark:"#BB86FC",
