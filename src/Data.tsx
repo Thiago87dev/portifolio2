@@ -27,3 +27,198 @@ export const skillList =  [
     { name: "Git", icon: <SiGit />, colorText:'#f05539', colorBg: 'transparent' },
     { name: "GitHub", icon: <SiGithub />, colorText:'#000', colorBg: 'white', rounded: '100px' },
   ];
+
+  export const allProjects = [
+    {
+      title: "D.D.M.N",
+      text: "Meu primeiro site remunerado criado para uma construtora de Joinville",
+      imgPath: "/images/ddmn.png",
+      hrefRepo: "https://github.com/Thiago87dev/bricklayer-project",
+      hrefSite: "https://www.ddmn.app.br/",
+      alt: "Capa D.D.M.N Construtora",
+      icons: [
+        { title: "React", icon: <SiReact /> },
+        { title: "Next", icon: <SiNextdotjs /> },
+        { title: "Typescript", icon: <SiTypescript /> },
+        { title: "Tailwind", icon: <SiTailwindcss /> },
+        { title: "Git", icon: <SiGit /> },
+        { title: "GitHub", icon: <SiGithub /> },
+        
+      ],
+    },
+    {
+      title: "Best Movies",
+      text: "Um site onde você pode ver os 20 filmes mais bem avaliados na página inicial e, além disso, pode pesquisar qualquer filme e ver o resultado dos 20 melhores.",
+      // imgSrc: bestMovie,
+      imgPath: "/images/img-best-movie.png",
+      hrefRepo: "https://github.com/Thiago87dev/react_bestMovies",
+      hrefSite: "https://thiago87dev.github.io/react_bestMovies/",
+      alt: "Capa site Best Movie",
+      icons: [
+        { title: "React", icon: <SiReact /> },
+        { title: "Javascript", icon: <SiJavascript /> },
+        { title: "Git", icon: <SiGit /> },
+        { title: "GitHub", icon: <SiGithub /> },
+        
+      ],
+    },
+    {
+      title: "Bloggers",
+      text: "Um blog completo, onde pode ser cadastrados novos posts, autores e categorias.",
+      // imgSrc: blog,
+      imgPath: "/img/img-blogger.png",
+      hrefRepo: "https://github.com/Thiago87dev/my-blog",
+      hrefSite: "https://my-blog-phi-green.vercel.app/",
+      alt: "Capa blog",
+      icons: [
+        { title: "React", icon: <SiReact /> },
+        { title: "Next", icon: <SiNextdotjs /> },
+        { title: "Typescript", icon: <SiTypescript /> },
+        { title: "Tailwind", icon: <SiTailwindcss /> },
+        { title: "Git", icon: <SiGit /> },
+        { title: "GitHub", icon: <SiGithub /> },
+        
+      ],
+    },
+    {
+      title: "PokeNext",
+      text: "Um site que mostra alguns pokémons e seus detalhes.",
+      imgPath: "/img/pokenext.png",
+      hrefRepo: "https://github.com/Thiago87dev/pokeNext",
+      hrefSite: "https://poke-next-one-xi.vercel.app/",
+      alt: "Capa pokenext",
+      icons: [
+        { title: "React", icon: <SiReact /> },
+        { title: "Next", icon: <SiNextdotjs /> },
+        { title: "Javascript", icon: <SiJavascript /> },
+        { title: "Git", icon: <SiGit /> },
+        { title: "GitHub", icon: <SiGithub /> },
+      ],
+    },
+    {
+      title: "Figbruary",
+      text: "Um site criado através de um projeto figma utilizando dynamic rotes.",
+      imgPath: "/img/figbruary.png",
+      hrefRepo: "https://github.com/Thiago87dev/figbruary",
+      hrefSite: "https://figbruary-five.vercel.app/",
+      alt: "Capa figbruary",
+      icons: [
+        { title: "React", icon: <SiReact /> },
+        { title: "Next", icon: <SiNextdotjs /> },
+        { title: "Typescript", icon: <SiTypescript /> },
+        { title: "Tailwind", icon: <SiTailwindcss /> },
+        { title: "Git", icon: <SiGit /> },
+        { title: "GitHub", icon: <SiGithub /> },
+        
+      ],
+    },
+    {
+      title: "My todo",
+      text: "Um site de tarefas utilizando localStorage.",
+      imgPath: "/img/my-todo.png",
+      hrefRepo: "https://github.com/Thiago87dev/my-todo",
+      hrefSite: "https://my-todo-dun.vercel.app/",
+      alt: "Capa my todo",
+      icons: [
+        { title: "React", icon: <SiReact /> },
+        { title: "Typescript", icon: <SiTypescript /> },
+        { title: "Git", icon: <SiGit /> },
+        { title: "GitHub", icon: <SiGithub /> },
+        
+      ],
+    },
+    {
+      title: "Gerador de CPF",
+      text: "Um sistema que gera CPFs válidos.",
+      imgPath: "/img/gera-cpf.png",
+      hrefRepo: "https://github.com/Thiago87dev/geradorCPF",
+      hrefSite: "https://thiago87dev.github.io/geradorCPF/",
+      alt: "Capa gerador de cpf",
+      icons: [
+        { title: "Html 5", icon: <SiHtml5 /> },
+        { title: "Css 3", icon: <SiCss3 /> },
+        { title: "Javascipt", icon: <SiJavascript /> },
+        { title: "Git", icon: <SiGit /> },
+        { title: "GitHub", icon: <SiGithub /> },
+        
+      ],
+    },
+    {
+      title: "Gerador de Senha",
+      text: "Um sistema que gera senhas aleatórias, podendo escolher entre letras maiúsculas ou minusculas, números e símbolos, além de definir o tamanho da senha. ",
+      imgPath: "/img/gera-senha.png",
+      hrefRepo: "https://github.com/Thiago87dev/password-generator",
+      hrefSite: "https://password-generator-hazel-phi.vercel.app/",
+      alt: "Capa gerador de senha",
+      icons: [
+        { title: "React", icon: <SiReact /> },
+        { title: "Typescript", icon: <SiTypescript /> },
+        { title: "Git", icon: <SiGit /> },
+        { title: "GitHub", icon: <SiGithub /> },
+        
+      ],
+    },
+    {
+      title: "First landing page",
+      text: "Minha primeira landing page utilizando apenas html e css.",
+      imgPath: "/img/landing-page.png",
+      hrefRepo: "https://github.com/Thiago87dev/landing-page",
+      hrefSite: "https://tdevlandingpage.netlify.app/",
+      alt: "Capa da minha primeira landing page",
+      icons: [
+        { title: "Html 5", icon: <SiHtml5 /> },
+        { title: "Css 3", icon: <SiCss3 /> },
+        { title: "Git", icon: <SiGit /> },
+        { title: "GitHub", icon: <SiGithub /> },
+        
+      ],
+    },
+    {
+      title: "Média Uniasselvi",
+      text: "Um sistema que criei em parceria com um colega de faculdade para calcular a média das notas da Uniasselvi.",
+      imgPath: "/img/media-uni.png",
+      hrefRepo: "https://github.com/Thiago87dev/mediaUniasselvi",
+      hrefSite: "https://thiago87dev.github.io/mediaUniasselvi/",
+      alt: "Capa da calculadora de média Uniasselvi",
+      icons: [
+        { title: "Html 5", icon: <SiHtml5 /> },
+        { title: "Css 3", icon: <SiCss3 /> },
+        { title: "Javascipt", icon: <SiJavascript /> },
+        { title: "Git", icon: <SiGit /> },
+        { title: "GitHub", icon: <SiGithub /> },
+        
+      ],
+    },
+    {
+      title: "Calculo IMC",
+      text: "Um sistema que faz o calculo de IMC",
+      imgPath: "/img/calc-imc2.png",
+      hrefRepo: "https://github.com/Thiago87dev/next-imc",
+      hrefSite: "https://next-imc.vercel.app/",
+      alt: "Capa calculo imc.",
+      icons: [
+        { title: "React", icon: <SiReact /> },
+        { title: "Next", icon: <SiNextdotjs /> },
+        { title: "Typescript", icon: <SiTypescript /> },
+        { title: "Tailwind", icon: <SiTailwindcss /> },
+        { title: "Git", icon: <SiGit /> },
+        { title: "GitHub", icon: <SiGithub /> },
+        
+      ],
+    },
+    {
+      title: "Comparador de preço",
+      text: "Um sistema que compara a quantidade e o preço entre dois produtos e diz qual vale mais pena comprar.",
+      imgPath: "/img/comp-preco.png",
+      hrefRepo: "https://github.com/Thiago87dev/comparadorPreco",
+      hrefSite: "https://thiago87dev.github.io/comparadorPreco/",
+      alt: "Capa comparador de preço.",
+      icons: [
+        { title: "Html 5", icon: <SiHtml5 /> },
+        { title: "Css 3", icon: <SiCss3 /> },
+        { title: "Javascipt", icon: <SiJavascript /> },
+        { title: "Git", icon: <SiGit /> },
+        { title: "GitHub", icon: <SiGithub /> },
+      ],
+    },
+  ]

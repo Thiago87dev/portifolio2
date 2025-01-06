@@ -1,25 +1,25 @@
 {
-    "Home": {
-      "title": "Thiago Alves",
-      "description": "Desenvolvo no frontend com HTML, CSS, JavaScript, TypeScript, React, Next.js e Tailwind. No backend, trabalho com Python Django e Mysql, criando aplicações completas, modernas e eficientes.",
-      "iam":"Eu sou desenvolvedor fullstack focado em",
-      "react":"React",
-      "and":"e",
-      "python":"Python",
-      "iCreateWebsites":"Eu crio Websites",
-      "myResume":"Meu currículo",
-      "downloadResume":"Baixar currículo"
-    },
-    "Navbar":{
-    "title":"Thiago Alves",
+  "Home": {
+    "title": "Thiago Alves",
+    "description": "Desenvolvo no frontend com HTML, CSS, JavaScript, TypeScript, React, Next.js e Tailwind. No backend, trabalho com Python Django e Mysql, criando aplicações completas, modernas e eficientes.",
+    "iam": "Eu sou desenvolvedor fullstack focado em",
+    "react": "React",
+    "and": "e",
+    "python": "Python",
+    "iCreateWebsites": "Eu crio Websites",
+    "myResume": "Meu currículo",
+    "downloadResume": "Baixar currículo",
+    "skills": "Habilidades"
+  },
+  "Navbar": {
+    "title": "Thiago Alves",
     "darkMode": "Modo Escuro",
     "lightMode": "Modo Claro",
-    "titleBtnLanguage":"Trocar para inglês",
+    "titleBtnLanguage": "Trocar para inglês",
     "home": "Início",
     "projects": "projetos",
     "about": "sobre",
     "contact": "contato",
     "language": "Português"
   }
-  }
-  
+}

@@ -53,11 +53,17 @@ const Navbar = () => {
 
   const handleLanguage = () => {
     const currentPath = window.location.pathname;
+    const currentScrollPosition = window.scrollY;
+  
     if (currentPath.includes("/pt")) {
-      router.push(pathname, { locale: "en" });
+      router.replace(pathname, { locale: "en" }); 
     } else {
-      router.push(pathname, { locale: "pt" });
+      router.replace(pathname, { locale: "pt" }); 
     }
+  
+    setTimeout(() => {
+      window.scrollTo(0, currentScrollPosition); 
+    }, 200);
   };
 
   const handleToggleMenu = () => {
