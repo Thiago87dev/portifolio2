@@ -9,7 +9,11 @@
     "iCreateWebsites": "I create websites",
     "myResume": "My resume",
     "downloadResume": "Download resume",
-    "skills": "Skills"
+    "skills": "Skills",
+    "projects":"Projects",
+    "website":"Website",
+    "repository":"Repository",
+    "seeMoreProjects":"See more projects"
   },
   "Navbar": {
     "title": "Thiago Alves",
@@ -21,5 +25,10 @@
     "about": "about",
     "contact": "contact",
     "language": "English"
+  },
+  "Projects":{
+    "ddmn":"My first paid website created for a construction company in Joinville",
+    "best_movies":"A website where you can see the top 20 rated movies on the homepage and in addition, you can search for any movie and see the top 20 results.",
+    "bloggers":"A complete blog, where new posts, authors and categories can be registered."
   }
 }

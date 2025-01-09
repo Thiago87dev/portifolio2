@@ -1,6 +1,5 @@
 interface ButtonProps {
   title: string;
-
 }
 
 const Button = ({ title}: ButtonProps) => {

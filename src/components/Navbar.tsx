@@ -63,7 +63,7 @@ const Navbar = () => {
   
     setTimeout(() => {
       window.scrollTo(0, currentScrollPosition); 
-    }, 200);
+    }, 300);
   };
 
   const handleToggleMenu = () => {

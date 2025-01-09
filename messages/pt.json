@@ -9,7 +9,11 @@
     "iCreateWebsites": "Eu crio Websites",
     "myResume": "Meu currículo",
     "downloadResume": "Baixar currículo",
-    "skills": "Habilidades"
+    "skills": "Habilidades",
+    "projects":"Projetos",
+    "website":"Site",
+    "repository":"Repositório",
+    "seeMoreProjects":"Veja mais projetos"
   },
   "Navbar": {
     "title": "Thiago Alves",
@@ -21,5 +25,10 @@
     "about": "sobre",
     "contact": "contato",
     "language": "Português"
+  },
+  "Projects":{
+    "ddmn":"Meu primeiro site remunerado criado para uma construtora de Joinville",
+    "best_movies":"Um site onde você pode ver os 20 filmes mais bem avaliados na página inicial e além disso, você pode pesquisar qualquer filme e ver os 20 melhores resultados.",
+    "bloggers":"Um blog completo, onde pode ser cadastrados novos posts, autores e categorias."
   }
 }

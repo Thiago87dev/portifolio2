@@ -22,7 +22,7 @@ export default {
         colorBgNavLight: "rgba(255, 255, 255, 0.9)",
         colorTextLight: "#212121 ",
         colorHighlightsLight:"#6200EE",
-        colorLinksLight: "#03DAC5",
+        colorLinksLight: "#01786c",
 
         colorBgDark: "#232323",
         colorBg2Dark: "#2C2C2C",
