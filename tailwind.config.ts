@@ -11,7 +11,7 @@ export default {
     screens: {
       sm: '558px',
       md: '863px',
-      lg: '1125px',
+      lg: '1225px',
       xl: '1440px',
     },
     extend: {
