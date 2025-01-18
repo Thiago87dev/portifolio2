@@ -12,13 +12,13 @@ const AboutHome = () => {
               Sobre mim
             </h2>
           </div>
-          <p className="w-2/5">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
-            tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.
+          <p className="w-2/5 text-lg">
+            Minha paixão por tecnologia me motiva a explorar, aprender e criar
+            soluções que impactem positivamente o mundo.
           </p>
         </div>
         <div className="flex items-center">
-          <div className="flex flex-col gap-8 w-[35%]">
+          <div className="flex flex-col gap-8 w-[35%] dark:border-r-colorHighlightsDark border-r-colorHighlightsLight border-r-solid border-r-2">
             <div className="flex gap-6">
               <div className="text-5xl">
                 <BiConversation className="dark:bg-colorHighlightsDark bg-colorHighlightsLight text-white p-2 rounded-full" />
@@ -26,7 +26,8 @@ const AboutHome = () => {
               <div>
                 <h2 className="text-2xl font-semibold mb-2">Comunicação</h2>
                 <p className="w-2/3">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Habilidade de transmitir ideias de forma clara e eficaz,
+                  promovendo entendimento e colaboração em projetos.
                 </p>
               </div>
             </div>
@@ -40,7 +41,8 @@ const AboutHome = () => {
                   Trabalho em equipe
                 </h2>
                 <p className="w-2/3">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Capacidade de cooperar com diferentes perfis profissionais,
+                  garantindo alinhamento e sucesso nos objetivos comuns.
                 </p>
               </div>
             </div>
@@ -54,35 +56,49 @@ const AboutHome = () => {
                   Resolução de problemas
                 </h2>
                 <p className="w-2/3">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Aptidão para identificar desafios, propor soluções práticas e
+                  implementar melhorias rapidamente e com eficiência.
                 </p>
               </div>
             </div>
             <hr className="w-4/5 border-gray-700" />
           </div>
-          <div className="flex flex-col gap-8 w-[65%] pl-20 dark:border-l-colorHighlightsDark border-l-colorHighlightsLight border-l-solid border-l-2">
+          <div className="flex flex-col gap-8 w-[65%] pl-20 text-lg">
             <p>
-              Actress, Model, and Health and Wellness Enthusiast Irene Bryant
-              has over 45 million followers across YouTube, Facebook and
-              Instagram, earning the spot as one of the top five most viewed
-              Instagram story accounts in the world. With over 1.3 million new
-              followers a month on Instagram alone, Irene is a top content
-              creator on a mission to help people feel their best through
-              compelling storytelling and high-quality videos.
+              Minhas <span className="font-bold">principais habilidades</span>{" "}
+              estão ligadas à minha capacidade de colaborar e me adaptar a
+              diferentes cenários.{" "}
+              <span className="font-bold">Comunicação</span> eficaz,{" "}
+              <span className="font-bold">trabalho em equipe</span> e{" "}
+              <span className="font-bold">resolução de problemas</span> são{" "}
+              pilares da minha atuação, permitindo que eu me conecte com as
+              pessoas e enfrente desafios com criatividade e eficiência. Além
+              disso, sou <span className="font-bold">dedicado</span>, tenho{" "}
+              <span className="font-bold">facilidade em aprender</span> novas
+              tecnologias e metodologias, e valorizo a{" "}
+              <span className="font-bold">organização</span> e a{" "}
+              <span className="font-bold">proatividade</span> para alcançar
+              resultados consistentes e de qualidade.
             </p>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Lectus
-              proin nibh nisl condimentum id venenatis. Amet dictum sit amet
-              justo donec enim diam vulputate ut. In nisl nisi scelerisque eu
-              ultrices vitae auctor eu augue. Id eu nisl nunc mi ipsum faucibus
-              vitae. Sit amet commodo nulla facilisi. Ultricies integer quis
-              auctor elit sed vulputate mi sit amet. Auctor eu augue ut lectus
-              arcu bibendum at varius. Vel quam elementum pulvinar etiam non
-              quam lacus. Pellentesque adipiscing commodo elit at imperdiet dui.
-              Sed risus pretium quam vulputate dignissim. Fermentum iaculis eu
-              non diam phasellus vestibulum lorem sed risus. Enim diam vulputate
-              ut pharetra sit amet aliquam.
+              No <span className="font-bold">aspecto técnico</span>, desenvolvo
+              aplicações modernas e responsivas, combinando uma experiência
+              sólida em{" "}
+              <span className="font-bold">
+                HTML, CSS, JavaScript, TypeScript, React, Next.js, Redux Toolkit
+                e Tailwind
+              </span>{" "}
+              no frontend, com{" "}
+              <span className="font-bold">Python, Django e MySQL</span> no
+              backend. Essa combinação de tecnologias me permite criar soluções
+              completas e integradas, sempre priorizando eficiência,
+              escalabilidade e a melhor experiência para os usuários.
+            </p>
+            <p>
+              Estou sempre em busca de novos aprendizados e desafios que me
+              permitam crescer tanto no âmbito profissional quanto no pessoal.
+              Com essa união de habilidades técnicas e comportamentais, busco
+              contribuir para projetos inovadores e que gerem impacto positivo.
             </p>
             <div className="w-3/12">
               <Button title="Mais" />

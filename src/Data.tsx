@@ -11,6 +11,7 @@ import {
   SiMysql,
   SiGit,
   SiGithub,
+  SiRedux, 
 } from "react-icons/si";
 
 const iconsStyles = {
@@ -20,6 +21,7 @@ const iconsStyles = {
   typescript: { colorText: "#377cc8", colorBg: "transparent", rounded: "" },
   react: { colorText: "#81e0ff", colorBg: "transparent", rounded: "" },
   nextJs: { colorText: "#000000", colorBg: "white", rounded: "100px" },
+  redux: { colorText: "#7a50be", colorBg: "transparent", rounded: "" },
   tailwind: { colorText: "#3ebff8", colorBg: "transparent", rounded: "" },
   python: { colorText: "#3c77a8", colorBg: "transparent", rounded: "" },
   django: { colorText: "#113527", colorBg: "transparent", rounded: "" },
@@ -35,6 +37,7 @@ export const skillList = [
   { name: "Typescript", icon: <SiTypescript />, ...iconsStyles.typescript },
   { name: "React", icon: <SiReact />, ...iconsStyles.react },
   { name: "NextJs", icon: <SiNextdotjs />, ...iconsStyles.nextJs },
+  { name: "Redux", icon: <SiRedux />, ...iconsStyles.redux },
   { name: "Tailwind", icon: <SiTailwindcss />, ...iconsStyles.tailwind },
   { name: "Python", icon: <SiPython />, ...iconsStyles.python },
   { name: "Django", icon: <SiDjango />, ...iconsStyles.django },
