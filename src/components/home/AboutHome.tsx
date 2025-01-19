@@ -5,20 +5,20 @@ import Button from "../Button";
 const AboutHome = () => {
   return (
     <div className="dark:bg-colorBg3Dark bg-colorBg3Light flex flex-col items-center  w-full pt-16 md:pt-16 dark:text-colorTextDark text-colorTextLight min-h-screen pb-8">
-      <div className="flex flex-col gap-8 w-[1204px] ">
-        <div className="mb-20">
-          <div className="flex px-4 lg:px-0 items-start mb-4 text-5xl font-semibold w-full max-w-[1204px]">
-            <h2 className="w-2/4  pb-1 border-b-4 dark:border-colorHighlightsDark border-colorHighlightsLight">
+      <div className="flex flex-col gap-8 max-w-[1204px] px-4 lg:px-0">
+        <div className="mb-20 ">
+          <div className="flex  items-start mb-4 text-5xl font-semibold w-full max-w-[1204px]">
+            <h2 className="w-full sm:w-2/4  pb-1 border-b-4 dark:border-colorHighlightsDark border-colorHighlightsLight">
               Sobre mim
             </h2>
           </div>
-          <p className="w-2/5 text-lg">
+          <p className=" mx-auto md:mx-0 text-center md:text-left w-[90%] sm:w-[80%] md:w-2/5 text-lg">
             Minha paixão por tecnologia me motiva a explorar, aprender e criar
             soluções que impactem positivamente o mundo.
           </p>
         </div>
-        <div className="flex items-center">
-          <div className="flex flex-col gap-8 w-[35%] dark:border-r-colorHighlightsDark border-r-colorHighlightsLight border-r-solid border-r-2">
+        <div className="flex flex-col md:flex-row gap-10 md:gap-0 items-center">
+          <div className="flex flex-col gap-8 w-[90%] sm:w-[80%] md:w-[35%] dark:border-r-colorHighlightsDark border-r-colorHighlightsLight border-r-solid border-r-2">
             <div className="flex gap-6">
               <div className="text-5xl">
                 <BiConversation className="dark:bg-colorHighlightsDark bg-colorHighlightsLight text-white p-2 rounded-full" />
@@ -63,7 +63,7 @@ const AboutHome = () => {
             </div>
             <hr className="w-4/5 border-gray-700" />
           </div>
-          <div className="flex flex-col gap-8 w-[65%] pl-20 text-lg">
+          <div className="flex flex-col gap-8 w-[90%] sm:w-[80%] md:w-[65%] text-center md:text-left md:pl-20 text-lg">
             <p>
               Minhas <span className="font-bold">principais habilidades</span>{" "}
               estão ligadas à minha capacidade de colaborar e me adaptar a
@@ -100,7 +100,7 @@ const AboutHome = () => {
               Com essa união de habilidades técnicas e comportamentais, busco
               contribuir para projetos inovadores e que gerem impacto positivo.
             </p>
-            <div className="w-3/12">
+            <div className="flex mx-auto md:mx-0 w-[190px]">
               <Button title="Mais" />
             </div>
           </div>
