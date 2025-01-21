@@ -1,5 +1,5 @@
 "use client";
-import { FaMoon } from "react-icons/fa";
+import { FaMoon, FaLinkedin, FaGithub } from "react-icons/fa";
 import { FaSun } from "react-icons/fa";
 import { IoLanguage } from "react-icons/io5";
 import { IoMenu } from "react-icons/io5";
@@ -54,15 +54,15 @@ const Navbar = () => {
   const handleLanguage = () => {
     const currentPath = window.location.pathname;
     const currentScrollPosition = window.scrollY;
-  
+
     if (currentPath.includes("/pt")) {
-      router.replace(pathname, { locale: "en" }); 
+      router.replace(pathname, { locale: "en" });
     } else {
-      router.replace(pathname, { locale: "pt" }); 
+      router.replace(pathname, { locale: "pt" });
     }
-  
+
     setTimeout(() => {
-      window.scrollTo(0, currentScrollPosition); 
+      window.scrollTo(0, currentScrollPosition);
     }, 300);
   };
 
@@ -116,8 +116,25 @@ const Navbar = () => {
           <div className=" flex justify-between w-full max-w-[1220px] px-4">
             <div className="flex w-full  max-w-[1220px] justify-between items-center">
               <Link href="/">
-                <h1 className="group font-extrabold  md:text-2xl"><span className="ml-0 mr-1 group-hover:mr-0 group-hover:ml-1">&lt;</span>{t("title")}<span className="ml-1 group-hover:ml-0">/&gt;</span></h1>
+                <h1 className="group font-extrabold  md:text-2xl">
+                  <span className="ml-0 mr-1 group-hover:mr-0 group-hover:ml-1">
+                    &lt;
+                  </span>
+                  {t("title")}
+                  <span className="ml-1 group-hover:ml-0">/&gt;</span>
+                </h1>
               </Link>
+              <div className="hidden md:flex gap-4">
+                <Link
+                  target="_blank"
+                  href={"https://www.linkedin.com/in/thiago-alves-dev/"}
+                >
+                  <FaLinkedin size={30} title="Linkedin" />
+                </Link>
+                <Link target="_blank" href={"https://github.com/Thiago87dev"}>
+                  <FaGithub size={30} title="Github" />
+                </Link>
+              </div>
               <div className="flex relative justify-center md:hidden">
                 {activeMenu ? (
                   <div onClick={handleToggleMenu}>
@@ -126,41 +143,56 @@ const Navbar = () => {
                 ) : (
                   <div onClick={handleToggleMenu}>
                     <IoMenu size={30} />
-                    
                   </div>
                 )}
                 <div
-                  className={` overflow-hidden absolute top-6 -left-64 transition-all duration-500 ease-in-out dark:bg-colorHighlightsLight bg-colorHighlightsDark w-72 rounded-lg ${
+                  className={` overflow-hidden absolute top-6 -left-64 transition-all text-white dark:text-black duration-500 ease-in-out dark:bg-colorHighlightsDark bg-colorHighlightsLight w-72 rounded-lg ${
                     activeMenu ? " opacity-100 h-96" : "l opacity-0 h-0"
                   }`}
                 >
-                  <ul className="flex h-full flex-col justify-around items-center text-lg font-semibold ">
-                    {menuItems.map((item, index) => (
-                      <li
-                        onClick={() => {
-                          setActiveItem(item.label);
-                          setActiveMenu(false);
-                        }}
-                        className="relative cursor-pointer uppercase"
-                        key={index}
+                  <div className="flex h-full flex-col justify-around items-center text-lg font-semibold ">
+                    <ul className="flex h-full flex-col justify-around items-center text-lg font-semibold ">
+                      {menuItems.map((item, index) => (
+                        <li
+                          onClick={() => {
+                            setActiveItem(item.label);
+                            setActiveMenu(false);
+                          }}
+                          className="relative cursor-pointer uppercase"
+                          key={index}
+                        >
+                          {activeItem === item.label && (
+                            <div className="absolute left-0 right-0 h-1 bg-colorHighlightsDark dark:bg-colorHighlightsLight top-[20px] translate-y-2"></div>
+                          )}
+                          <Link href={item.path}>
+                            <span
+                              className={`${
+                                activeItem === item.label
+                                  ? "opacity-100 text-xl"
+                                  : "opacity-90"
+                              }`}
+                            >
+                              {item.label}
+                            </span>
+                          </Link>
+                        </li>
+                      ))}
+                    </ul>
+                    <div className="flex gap-4 justify-center mb-4">
+                      <Link
+                        target="_blank"
+                        href={"https://www.linkedin.com/in/thiago-alves-dev/"}
                       >
-                        {activeItem === item.label && (
-                          <div className="absolute left-0 right-0 h-1 bg-colorHighlightsLight dark:bg-colorHighlightsDark top-[20px] translate-y-2"></div>
-                        )}
-                        <Link href={item.path}>
-                          <span
-                            className={`${
-                              activeItem === item.label
-                                ? "opacity-100 text-xl"
-                                : "opacity-90"
-                            }`}
-                          >
-                            {item.label}
-                          </span>
-                        </Link>
-                      </li>
-                    ))}
-                  </ul>
+                        <FaLinkedin size={30} title="Linkedin" />
+                      </Link>
+                      <Link
+                        target="_blank"
+                        href={"https://github.com/Thiago87dev"}
+                      >
+                        <FaGithub size={30} title="Github" />
+                      </Link>
+                    </div>
+                  </div>
                 </div>
               </div>
               <div className="hidden md:flex">

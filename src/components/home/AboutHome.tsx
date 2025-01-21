@@ -4,7 +4,7 @@ import { MdOutlineReportProblem } from "react-icons/md";
 import Button from "../Button";
 const AboutHome = () => {
   return (
-    <div className="dark:bg-colorBg3Dark bg-colorBg3Light flex flex-col items-center  w-full pt-16 md:pt-16 dark:text-colorTextDark text-colorTextLight min-h-screen pb-8">
+    <div className="dark:bg-colorBg3Dark bg-colorBg3Light flex flex-col items-center w-full min-h-screen  pt-16 md:pt-16 dark:text-colorTextDark text-colorTextLight pb-8">
       <div className="flex flex-col gap-8 max-w-[1204px] px-4 lg:px-0">
         <div className="mb-20 ">
           <div className="flex  items-start mb-4 text-5xl font-semibold w-full max-w-[1204px]">
@@ -17,7 +17,7 @@ const AboutHome = () => {
             soluções que impactem positivamente o mundo.
           </p>
         </div>
-        <div className="flex flex-col md:flex-row gap-10 md:gap-0 items-center">
+        <div className="flex flex-col md:flex-row gap-10 md:gap-0 items-center mb-20">
           <div className="flex flex-col gap-8 w-[90%] sm:w-[80%] md:w-[35%] dark:border-r-colorHighlightsDark border-r-colorHighlightsLight border-r-solid border-r-2">
             <div className="flex gap-6">
               <div className="text-5xl">

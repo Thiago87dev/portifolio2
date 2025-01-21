@@ -28,7 +28,7 @@ const ProjectsHome = () => {
   }, []);
 
   return (
-    <div className="dark:bg-colorBg2Dark bg-colorBgLight flex flex-col justify-center items-center w-full pt-16  dark:text-colorTextDark text-colorTextLight min-h-screen">
+    <div className="dark:bg-colorBg2Dark bg-colorBgLight flex flex-col justify-center items-center w-full min-h-screen pt-16  dark:text-colorTextDark text-colorTextLight ">
       <div className="flex px-4 lg:px-0 items-start mb-20 text-5xl font-semibold w-full max-w-[1204px]">
         <h2 className="w-2/4  pb-1 border-b-4 dark:border-colorHighlightsDark border-colorHighlightsLight">
           {t("projects")}
