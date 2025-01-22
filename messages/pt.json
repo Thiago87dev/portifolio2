@@ -29,6 +29,8 @@
   "Projects":{
     "ddmn":"Meu primeiro site remunerado criado para uma construtora de Joinville",
     "best_movies":"Um site onde você pode ver os 20 filmes mais bem avaliados na página inicial e além disso, você pode pesquisar qualquer filme e ver os 20 melhores resultados.",
-    "bloggers":"Um blog completo, onde pode ser cadastrados novos posts, autores e categorias."
+    "bloggers":"Um blog completo, onde pode ser cadastrados novos posts, autores e categorias.",
+    "pokenext":"Um site que mostra alguns pokémons e seus detalhes.",
+    "figbruary":"Um site criado através de um projeto figma utilizando dynamic rotes."
   }
 }

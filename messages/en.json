@@ -29,6 +29,8 @@
   "Projects":{
     "ddmn":"My first paid website created for a construction company in Joinville",
     "best_movies":"A website where you can see the top 20 rated movies on the homepage and in addition, you can search for any movie and see the top 20 results.",
-    "bloggers":"A complete blog, where new posts, authors and categories can be registered."
+    "bloggers":"A complete blog, where new posts, authors and categories can be registered.",
+    "pokenext":"A website that shows some Pokémon and their details.",
+    "figbruary":"A website created through a figma project using dynamic routes."
   }
 }

@@ -99,8 +99,7 @@ export const allProjects = [
   },
   {
     title: "PokeNext",
-    text: "Um site que mostra alguns pokémons e seus detalhes.",
-    imgPath: "/img/pokenext.png",
+    imgPath: "/images/pokenext.png",
     hrefRepo: "https://github.com/Thiago87dev/pokeNext",
     hrefSite: "https://poke-next-one-xi.vercel.app/",
     alt: "Capa pokenext",
@@ -117,7 +116,7 @@ export const allProjects = [
   {
     title: "Figbruary",
     text: "Um site criado através de um projeto figma utilizando dynamic rotes.",
-    imgPath: "/img/figbruary.png",
+    imgPath: "/images/figbruary.png",
     hrefRepo: "https://github.com/Thiago87dev/figbruary",
     hrefSite: "https://figbruary-five.vercel.app/",
     alt: "Capa figbruary",

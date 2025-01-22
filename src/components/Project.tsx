@@ -1,9 +1,7 @@
-
 import Image from "next/image";
 import Button from "./Button";
 import Link from "next/link";
 import { useTranslations } from "next-intl";
-
 
 interface IconsProps {
   icon: React.ReactNode;
@@ -31,13 +29,12 @@ const Project = ({ data, imgSide }: ProjectProps) => {
   const t = useTranslations("Home");
   const t2 = useTranslations("Projects");
 
-
   return (
     <div className="flex lg:w-[1204px] gap-8 lg:justify-between justify-center h-full px-4 lg:px-0">
       <div className="flex flex-col lg:flex-row gap-8">
         {imgSide === "left" && (
           <div className=" lg:w-1/2 ">
-            <Link href={"/"}>
+            <Link target="_blank" href={data.hrefSite}>
               <Image
                 alt="img"
                 src={data.imgPath}
@@ -83,7 +80,7 @@ const Project = ({ data, imgSide }: ProjectProps) => {
         </div>
         {imgSide === "right" && (
           <div className="lg:w-1/2">
-            <Link href={"/"}>
+            <Link target="_blank" href={data.hrefSite}>
               <Image
                 alt="img"
                 src={data.imgPath}
