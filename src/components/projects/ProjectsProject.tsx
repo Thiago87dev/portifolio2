@@ -23,12 +23,12 @@ const ProjectsProject = () => {
 
   return (
     <div className="dark:bg-colorBg2Dark bg-colorBgLight flex flex-col justify-center items-center w-full min-h-screen pt-20  dark:text-colorTextDark text-colorTextLight overflow-x-hidden">
-      <div className="flex px-4 lg:px-0 items-start  mb-20 w-screen h-72 dark:bg-colorBg3Dark">
+      <div className="flex px-4 lg:px-0 items-start  mb-20 w-screen h-[420px] sm:h-72 bg-colorBg3Light dark:bg-colorBg3Dark">
         <div className="flex flex-col gap-8 items-center justify-center h-full px-4 lg:px-0 mb-20  w-full mx-auto  max-w-[1204px]">
-          <h2 className="text-5xl font-semibold">
+          <h2 className="text-4xl sm:text-5xl font-semibold text-center">
             Minha Jornada em Linhas de Código
           </h2>
-          <p className="text-center text-lg max-w-[680px]">
+          <p className="text-center text-base sm:text-lg max-w-[680px]">
             Cada projeto é um marco dessa trajetória, refletindo desafios
             superados, aprendizados conquistados e soluções inovadoras. Aqui
             estão os frutos do meu trabalho: aplicações que aliam
