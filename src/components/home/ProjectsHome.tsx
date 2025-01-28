@@ -1,7 +1,7 @@
 'use client'
 import Project from "../Project";
 import { allProjects } from "@/Data";
-import Link from "next/link";
+import { Link } from "@/i18n/routing";
 import { ImArrowRight } from "react-icons/im";
 import AnimatedElement from "../AnimatedElement";
 import { useTranslations } from "next-intl";
@@ -35,7 +35,7 @@ const ProjectsHome = () => {
         </h2>
       </div>
       <div className="flex flex-col gap-32 ">
-        {allProjects.slice(0, 3).map((item, index) => {
+        {allProjects.slice(-3).map((item, index) => {
           const imgSide = index % 2 == 0  ? "left" : "right";
         
           const imgSideCorrect = isSmallScreen ? "left" : imgSide 
@@ -54,7 +54,7 @@ const ProjectsHome = () => {
       </div>
       <AnimatedElement initial={{ x: "-100vw", opacity: 0 }}>
         <div className="flex items-center justify-end gap-2 pr-4 text-colorLinksLight dark:text-colorLinksDark my-20 lg:w-[1204px] ">
-          <Link className="flex items-center gap-2 group" href={"/"}>
+          <Link className="flex items-center gap-2 group" href="/projects">
             <h2 className="text-2xl font-bold">{t("seeMoreProjects")}</h2>
             <ImArrowRight
               className="transition-transform group-hover:translate-x-4"

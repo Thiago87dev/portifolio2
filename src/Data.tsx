@@ -11,7 +11,7 @@ import {
   SiMysql,
   SiGit,
   SiGithub,
-  SiRedux, 
+  SiRedux,
 } from "react-icons/si";
 
 const iconsStyles = {
@@ -48,8 +48,151 @@ export const skillList = [
 
 export const allProjects = [
   {
+    title: "Countries of the world",
+    imgPath: "/images/rest-contries.png",
+    hrefRepo: "https://github.com/Thiago87dev/rest-countries",
+    hrefSite: "https://rest-countries-drab-nu.vercel.app/",
+    alt: "Capa Countries of the world",
+    icons: [
+      { title: "React", icon: <SiReact />, ...iconsStyles.react },
+      { title: "Next", icon: <SiNextdotjs />, ...iconsStyles.nextJs },
+      { title: "Redux", icon: <SiRedux />, ...iconsStyles.redux },
+      {
+        title: "Typescript",
+        icon: <SiTypescript />,
+        ...iconsStyles.typescript,
+      },
+      { title: "Tailwind", icon: <SiTailwindcss />, ...iconsStyles.tailwind },
+    ],
+  },
+  {
+    title: "E-commerce product page",
+    imgPath: "/images/ecommerce-page.png",
+    hrefRepo: "https://github.com/Thiago87dev/E-commerce-product-page",
+    hrefSite: "https://e-commerce-product-page-gamma-neon.vercel.app/",
+    alt: "Capa E-commerce product page",
+    icons: [
+      { title: "React", icon: <SiReact />, ...iconsStyles.react },
+      { title: "Next", icon: <SiNextdotjs />, ...iconsStyles.nextJs },
+      { title: "Redux", icon: <SiRedux />, ...iconsStyles.redux },
+      {
+        title: "Typescript",
+        icon: <SiTypescript />,
+        ...iconsStyles.typescript,
+      },
+      { title: "Tailwind", icon: <SiTailwindcss />, ...iconsStyles.tailwind },
+    ],
+  },
+  {
+    title: "Product list with cart main",
+    imgPath: "/images/product-list-with-cart-main.png",
+    hrefRepo: "https://github.com/Thiago87dev/product-list-with-cart-main",
+    hrefSite: "https://product-list-with-cart-main-ebbt.vercel.app/",
+    alt: "Capa Product list with cart main",
+    icons: [
+      { title: "React", icon: <SiReact />, ...iconsStyles.react },
+      { title: "Next", icon: <SiNextdotjs />, ...iconsStyles.nextJs },
+      { title: "Redux", icon: <SiRedux />, ...iconsStyles.redux },
+      {
+        title: "Typescript",
+        icon: <SiTypescript />,
+        ...iconsStyles.typescript,
+      },
+      { title: "Tailwind", icon: <SiTailwindcss />, ...iconsStyles.tailwind },
+    ],
+  },
+  {
+    title: "PokeNext",
+    imgPath: "/images/pokenext.png",
+    hrefRepo: "https://github.com/Thiago87dev/pokeNext",
+    hrefSite: "https://poke-next-one-xi.vercel.app/",
+    alt: "Capa pokenext",
+    icons: [
+      { title: "React", icon: <SiReact />, ...iconsStyles.react },
+      { title: "Next", icon: <SiNextdotjs />, ...iconsStyles.nextJs },
+      {
+        title: "Javascript",
+        icon: <SiJavascript />,
+        ...iconsStyles.javascript,
+      },
+    ],
+  },
+  {
+    title: "Figbruary",
+    imgPath: "/images/figbruary.png",
+    hrefRepo: "https://github.com/Thiago87dev/figbruary",
+    hrefSite: "https://figbruary-five.vercel.app/",
+    alt: "Capa figbruary",
+    icons: [
+      { title: "React", icon: <SiReact />, ...iconsStyles.react },
+      { title: "Next", icon: <SiNextdotjs />, ...iconsStyles.nextJs },
+      {
+        title: "Typescript",
+        icon: <SiTypescript />,
+        ...iconsStyles.typescript,
+      },
+      { title: "Tailwind", icon: <SiTailwindcss />, ...iconsStyles.tailwind },
+    ],
+  },
+  {
+    title: "My todo",
+    imgPath: "/images/my-todo.png",
+    hrefRepo: "https://github.com/Thiago87dev/my-todo",
+    hrefSite: "https://my-todo-dun.vercel.app/",
+    alt: "Capa my todo",
+    icons: [
+      { title: "React", icon: <SiReact />, ...iconsStyles.react },
+      {
+        title: "Typescript",
+        icon: <SiTypescript />,
+        ...iconsStyles.typescript,
+      },
+    ],
+  },
+  {
+    title: "Gerador de CPF",
+    imgPath: "/images/gera-cpf.png",
+    hrefRepo: "https://github.com/Thiago87dev/geradorCPF",
+    hrefSite: "https://thiago87dev.github.io/geradorCPF/",
+    alt: "Capa gerador de cpf",
+    icons: [
+      { title: "Html 5", icon: <SiHtml5 />, ...iconsStyles.html },
+      { title: "Css 3", icon: <SiCss3 />, ...iconsStyles.css },
+      { title: "Javascipt", icon: <SiJavascript />, ...iconsStyles.javascript },
+    ],
+  },
+  {
+    title: "Gerador de Senha",
+    text: "Um sistema que gera senhas aleatórias, podendo escolher entre letras maiúsculas ou minusculas, números e símbolos, além de definir o tamanho da senha. ",
+    imgPath: "/images/gera-senha.png",
+    hrefRepo: "https://github.com/Thiago87dev/password-generator",
+    hrefSite: "https://password-generator-hazel-phi.vercel.app/",
+    alt: "Capa gerador de senha",
+    icons: [
+      { title: "React", icon: <SiReact />, ...iconsStyles.react },
+      {
+        title: "Typescript",
+        icon: <SiTypescript />,
+        ...iconsStyles.typescript,
+      },
+    ],
+  },
+  {
+    title: "Média Uniasselvi",
+    text: "Um sistema que criei em parceria com um colega de faculdade para calcular a média das notas da Uniasselvi.",
+    imgPath: "/images/media-uni.png",
+    hrefRepo: "https://github.com/Thiago87dev/mediaUniasselvi",
+    hrefSite: "https://thiago87dev.github.io/mediaUniasselvi/",
+    alt: "Capa da calculadora de média Uniasselvi",
+    icons: [
+      { title: "Html 5", icon: <SiHtml5 />, ...iconsStyles.html },
+      { title: "Css 3", icon: <SiCss3 />, ...iconsStyles.css },
+      { title: "Javascipt", icon: <SiJavascript />, ...iconsStyles.javascript },
+    ],
+  },
+  {
     title: "D.D.M.N",
-    
+
     imgPath: "/images/ddmn.png",
     hrefRepo: "https://github.com/Thiago87dev/bricklayer-project",
     hrefSite: "https://www.ddmn.app.br/",
@@ -97,100 +240,4 @@ export const allProjects = [
       { title: "Tailwind", icon: <SiTailwindcss />, ...iconsStyles.tailwind },
     ],
   },
-  {
-    title: "PokeNext",
-    imgPath: "/images/pokenext.png",
-    hrefRepo: "https://github.com/Thiago87dev/pokeNext",
-    hrefSite: "https://poke-next-one-xi.vercel.app/",
-    alt: "Capa pokenext",
-    icons: [
-      { title: "React", icon: <SiReact />, ...iconsStyles.react },
-      { title: "Next", icon: <SiNextdotjs />, ...iconsStyles.nextJs },
-      {
-        title: "Javascript",
-        icon: <SiJavascript />,
-        ...iconsStyles.javascript,
-      },
-    ],
-  },
-  {
-    title: "Figbruary",
-    text: "Um site criado através de um projeto figma utilizando dynamic rotes.",
-    imgPath: "/images/figbruary.png",
-    hrefRepo: "https://github.com/Thiago87dev/figbruary",
-    hrefSite: "https://figbruary-five.vercel.app/",
-    alt: "Capa figbruary",
-    icons: [
-      { title: "React", icon: <SiReact />, ...iconsStyles.react },
-      { title: "Next", icon: <SiNextdotjs />, ...iconsStyles.nextJs },
-      {
-        title: "Typescript",
-        icon: <SiTypescript />,
-        ...iconsStyles.typescript,
-      },
-      { title: "Tailwind", icon: <SiTailwindcss />, ...iconsStyles.tailwind },
-    ],
-  },
-  // {
-  //   title: "My todo",
-  //   text: "Um site de tarefas utilizando localStorage.",
-  //   imgPath: "/img/my-todo.png",
-  //   hrefRepo: "https://github.com/Thiago87dev/my-todo",
-  //   hrefSite: "https://my-todo-dun.vercel.app/",
-  //   alt: "Capa my todo",
-  //   icons: [
-  //     { title: "React", icon: <SiReact /> },
-  //     { title: "Typescript", icon: <SiTypescript /> },
-  //   ],
-  // },
-  // {
-  //   title: "Gerador de CPF",
-  //   text: "Um sistema que gera CPFs válidos.",
-  //   imgPath: "/img/gera-cpf.png",
-  //   hrefRepo: "https://github.com/Thiago87dev/geradorCPF",
-  //   hrefSite: "https://thiago87dev.github.io/geradorCPF/",
-  //   alt: "Capa gerador de cpf",
-  //   icons: [
-  //     { title: "Html 5", icon: <SiHtml5 /> },
-  //     { title: "Css 3", icon: <SiCss3 /> },
-  //     { title: "Javascipt", icon: <SiJavascript /> },
-  //   ],
-  // },
-  // {
-  //   title: "Gerador de Senha",
-  //   text: "Um sistema que gera senhas aleatórias, podendo escolher entre letras maiúsculas ou minusculas, números e símbolos, além de definir o tamanho da senha. ",
-  //   imgPath: "/img/gera-senha.png",
-  //   hrefRepo: "https://github.com/Thiago87dev/password-generator",
-  //   hrefSite: "https://password-generator-hazel-phi.vercel.app/",
-  //   alt: "Capa gerador de senha",
-  //   icons: [
-  //     { title: "React", icon: <SiReact /> },
-  //     { title: "Typescript", icon: <SiTypescript /> },
-  //   ],
-  // },
-  // {
-  //   title: "First landing page",
-  //   text: "Minha primeira landing page utilizando apenas html e css.",
-  //   imgPath: "/img/landing-page.png",
-  //   hrefRepo: "https://github.com/Thiago87dev/landing-page",
-  //   hrefSite: "https://tdevlandingpage.netlify.app/",
-  //   alt: "Capa da minha primeira landing page",
-  //   icons: [
-  //     { title: "Html 5", icon: <SiHtml5 /> },
-  //     { title: "Css 3", icon: <SiCss3 /> },
-  //   ],
-  // },
-  // {
-  //   title: "Média Uniasselvi",
-  //   text: "Um sistema que criei em parceria com um colega de faculdade para calcular a média das notas da Uniasselvi.",
-  //   imgPath: "/img/media-uni.png",
-  //   hrefRepo: "https://github.com/Thiago87dev/mediaUniasselvi",
-  //   hrefSite: "https://thiago87dev.github.io/mediaUniasselvi/",
-  //   alt: "Capa da calculadora de média Uniasselvi",
-  //   icons: [
-  //     { title: "Html 5", icon: <SiHtml5 /> },
-  //     { title: "Css 3", icon: <SiCss3 /> },
-  //     { title: "Javascipt", icon: <SiJavascript /> },
-  //   ],
-  // },
 ];

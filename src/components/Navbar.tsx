@@ -124,15 +124,15 @@ const Navbar = () => {
                   <span className="ml-1 group-hover:ml-0">/&gt;</span>
                 </h1>
               </Link>
-              <div className="hidden md:flex gap-4">
+              <div className="hidden md:flex gap-4 ">
                 <Link
                   target="_blank"
                   href={"https://www.linkedin.com/in/thiago-alves-dev/"}
                 >
-                  <FaLinkedin size={30} title="Linkedin" />
+                  <FaLinkedin size={30} title="Linkedin" className="hover:scale-110"/>
                 </Link>
                 <Link target="_blank" href={"https://github.com/Thiago87dev"}>
-                  <FaGithub size={30} title="Github" />
+                  <FaGithub size={30} title="Github" className="hover:scale-110" />
                 </Link>
               </div>
               <div className="flex relative justify-center md:hidden">
@@ -203,7 +203,7 @@ const Navbar = () => {
                         setActiveItem(item.label);
                         setActiveMenu(false);
                       }}
-                      className="relative cursor-pointer uppercase"
+                      className="relative cursor-pointer uppercase hover:scale-110"
                       key={index}
                     >
                       {activeItem === item.label && (
