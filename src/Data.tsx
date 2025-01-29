@@ -150,7 +150,7 @@ export const allProjects = [
     ],
   },
   {
-    title: "Gerador de CPF",
+    title: "Cpf Generator",
     imgPath: "/images/gera-cpf.png",
     hrefRepo: "https://github.com/Thiago87dev/geradorCPF",
     hrefSite: "https://thiago87dev.github.io/geradorCPF/",
@@ -162,7 +162,7 @@ export const allProjects = [
     ],
   },
   {
-    title: "Gerador de Senha",
+    title: "Password Generator",
     text: "Um sistema que gera senhas aleatórias, podendo escolher entre letras maiúsculas ou minusculas, números e símbolos, além de definir o tamanho da senha. ",
     imgPath: "/images/gera-senha.png",
     hrefRepo: "https://github.com/Thiago87dev/password-generator",
@@ -178,7 +178,7 @@ export const allProjects = [
     ],
   },
   {
-    title: "Média Uniasselvi",
+    title: "Uniasselvi Average",
     text: "Um sistema que criei em parceria com um colega de faculdade para calcular a média das notas da Uniasselvi.",
     imgPath: "/images/media-uni.png",
     hrefRepo: "https://github.com/Thiago87dev/mediaUniasselvi",

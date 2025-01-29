@@ -60,9 +60,9 @@
     "pokenext": "A website that shows some Pokémon and their details.",
     "figbruary": "A website created through a figma project using dynamic routes.",
     "my_todo": "A task site using localStorage.",
-    "gerador_de_cpf": "A system that generates valid CPFs.",
-    "gerador_de_senha": "A system that generates random passwords, being able to choose between upper or lower case letters, numbers and symbols, in addition to defining the length of the password.",
-    "média_uniasselvi": "A system I created in partnership with a college friend to calculate the average Uniasselvi grades.",
+    "cpf_generator": "A system that generates valid CPFs.",
+    "password_generator": "A system that generates random passwords, being able to choose between upper or lower case letters, numbers and symbols, in addition to defining the length of the password.",
+    "uniasselvi_average": "A system I created in partnership with a college friend to calculate the average Uniasselvi grades.",
     "countries_of_the_world": "I'm still going to write an elaborate description",
     "e-commerce_product_page": "I'm still going to write an elaborate description",
     "product_list_with_cart_main": "I'm still going to write an elaborate description"

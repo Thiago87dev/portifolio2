@@ -60,9 +60,9 @@
     "pokenext": "Um site que mostra alguns pokémons e seus detalhes.",
     "figbruary": "Um site criado através de um projeto figma utilizando dynamic rotes.",
     "my_todo": "Um site de tarefas utilizando localStorage.",
-    "gerador_de_cpf": "Um sistema que gera CPFs válidos.",
-    "gerador_de_senha": "A system that generates random passwords, being able to choose between upper or lower case letters, numbers and symbols, in addition to defining the length of the password.",
-    "média_uniasselvi": "Um sistema que criei em parceria com um colega de faculdade para calcular a média das notas da Uniasselvi.",
+    "cpf_generator": "Um sistema que gera CPFs válidos.",
+    "password_generator": "A system that generates random passwords, being able to choose between upper or lower case letters, numbers and symbols, in addition to defining the length of the password.",
+    "uniasselvi_average": "Um sistema que criei em parceria com um colega de faculdade para calcular a média das notas da Uniasselvi.",
     "countries_of_the_world": "Ainda vou fazer uma descrição elaborada",
     "e-commerce_product_page": "I'm still going to write an elaborate description",
     "product_list_with_cart_main": "I'm still going to write an elaborate description"
