@@ -115,25 +115,35 @@ const Navbar = () => {
         <div className="flex py-5 justify-center w-full max-w-[1440px] border-y-[1px] border-solid border-gray-600">
           <div className=" flex justify-between w-full max-w-[1220px] px-4">
             <div className="flex w-full  max-w-[1220px] justify-between items-center">
-              <Link href="/">
-                <h1 className="group font-extrabold  md:text-2xl">
-                  <span className="ml-0 mr-1 group-hover:mr-0 group-hover:ml-1">
-                    &lt;
-                  </span>
-                  {t("title")}
-                  <span className="ml-1 group-hover:ml-0">/&gt;</span>
-                </h1>
-              </Link>
-              <div className="hidden md:flex gap-4 ">
-                <Link
-                  target="_blank"
-                  href={"https://www.linkedin.com/in/thiago-alves-dev/"}
-                >
-                  <FaLinkedin size={30} title="Linkedin" className="hover:scale-110"/>
+              <div className="flex justify-between min-w-[43%]">
+                <Link href="/">
+                  <h1 className="group font-extrabold  md:text-2xl">
+                    <span className="ml-0 mr-1 group-hover:mr-0 group-hover:ml-1">
+                      &lt;
+                    </span>
+                    {t("title")}
+                    <span className="ml-1 group-hover:ml-0">/&gt;</span>
+                  </h1>
                 </Link>
-                <Link target="_blank" href={"https://github.com/Thiago87dev"}>
-                  <FaGithub size={30} title="Github" className="hover:scale-110" />
-                </Link>
+                <div className="hidden md:flex gap-4 ">
+                  <Link
+                    target="_blank"
+                    href={"https://www.linkedin.com/in/thiago-alves-dev/"}
+                  >
+                    <FaLinkedin
+                      size={30}
+                      title="Linkedin"
+                      className="hover:scale-110"
+                    />
+                  </Link>
+                  <Link target="_blank" href={"https://github.com/Thiago87dev"}>
+                    <FaGithub
+                      size={30}
+                      title="Github"
+                      className="hover:scale-110"
+                    />
+                  </Link>
+                </div>
               </div>
               <div className="flex relative justify-center md:hidden">
                 {activeMenu ? (
