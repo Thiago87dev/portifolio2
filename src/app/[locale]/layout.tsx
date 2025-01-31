@@ -5,6 +5,7 @@ import ReduxProvider from "@/redux/ReduxProvider";
 import Navbar from "@/components/Navbar";
 import { NextIntlClientProvider } from "next-intl";
 import {getMessages} from 'next-intl/server';
+import Footer from "@/components/Footer";
 
 const inter = Inter({
   weight: ['400','600', '700'],
@@ -32,6 +33,7 @@ export default async function RootLayout({
         <ReduxProvider>
           <Navbar />
           {children}
+          <Footer/>
         </ReduxProvider>
         </NextIntlClientProvider>
       </body>

@@ -1,9 +1,6 @@
 "use client";
-import { FaMoon, FaLinkedin, FaGithub } from "react-icons/fa";
-import { FaSun } from "react-icons/fa";
-import { IoLanguage } from "react-icons/io5";
-import { IoMenu } from "react-icons/io5";
-import { IoClose } from "react-icons/io5";
+import { FaMoon, FaSun, FaLinkedin, FaGithub } from "react-icons/fa";
+import { IoLanguage, IoMenu, IoClose } from "react-icons/io5";
 
 import { useEffect, useState } from "react";
 import { Link, usePathname, useRouter } from "@/i18n/routing";
@@ -25,11 +22,21 @@ const Navbar = () => {
 
   const [activeItem, setActiveItem] = useState("");
   const [activeMenu, setActiveMenu] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false);
 
-  const toggleDarkMode = () => {
-    dispatch(toggleDarkModeRedux());
-  };
+  useEffect(()=> {
+    const handleScroll = ()=>{
+      if(window.scrollY > 20){
+        setIsScrolled(true)
+      } else {
+        setIsScrolled(false)
+      }
+    }
+    window.addEventListener("scroll",handleScroll)
+    return () => window.removeEventListener("scroll", handleScroll)
+  })
 
+  
   useEffect(() => {
     if (darkMode) {
       document.documentElement.classList.add("dark");
@@ -37,7 +44,7 @@ const Navbar = () => {
       document.documentElement.classList.remove("dark");
     }
   }, [darkMode]);
-
+  
   useEffect(() => {
     // Sincroniza o item ativo com a rota atual
     if (pathname.includes("/projects")) {
@@ -50,20 +57,19 @@ const Navbar = () => {
       setActiveItem(t("home"));
     }
   }, [pathname, t]);
+  
+  const toggleDarkMode = () => {
+    dispatch(toggleDarkModeRedux());
+  };
 
   const handleLanguage = () => {
     const currentPath = window.location.pathname;
-    const currentScrollPosition = window.scrollY;
 
     if (currentPath.includes("/pt")) {
       router.replace(pathname, { locale: "en" });
     } else {
       router.replace(pathname, { locale: "pt" });
     }
-
-    setTimeout(() => {
-      window.scrollTo(0, currentScrollPosition);
-    }, 300);
   };
 
   const handleToggleMenu = () => {
@@ -78,7 +84,7 @@ const Navbar = () => {
   ];
 
   return (
-    <nav className=" flex flex-col items-center w-full bg-colorBgNavLight dark:bg-colorBgNavDark text-colorTextLight dark:text-colorTextDark fixed select-none">
+    <nav className=" flex flex-col items-center w-full bg-colorBgNavLight dark:bg-colorBgNavDark text-colorTextLight dark:text-colorTextDark  select-none">
       <div className="flex flex-col w-full items-center max-w-[1360px] ">
         <div className="flex items-center w-full max-w-[1220px] px-4 py-1 justify-between  ">
           <div
@@ -112,7 +118,7 @@ const Navbar = () => {
             </div>
           </div>
         </div>
-        <div className="flex py-5 justify-center w-full max-w-[1440px] border-y-[1px] border-solid border-gray-600">
+        <div className={`flex fixed py-5 justify-center ${isScrolled ? "mt-0": "mt-10"} bg-colorBgNavLight dark:bg-colorBgNavDark w-full border-y-[1px] border-solid border-gray-600`}>
           <div className=" flex justify-between w-full max-w-[1220px] px-4">
             <div className="flex w-full  max-w-[1220px] justify-between items-center">
               <div className="flex justify-between min-w-[43%]">
