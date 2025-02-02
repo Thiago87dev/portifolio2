@@ -66,5 +66,20 @@
     "countries_of_the_world": "I'm still going to write an elaborate description",
     "e-commerce_product_page": "I'm still going to write an elaborate description",
     "product_list_with_cart_main": "I'm still going to write an elaborate description"
+  },
+  "About": {
+    "title": "Who Am I Beyond the Code",
+    "behindEveryLine":"Behind every line of code, there is a journey of learning, challenges and achievements. I'm passionate about technology and development, always looking to improve my skills and create solutions that make a difference.",
+    "experiencesThat":"Experiences that shaped my path.",
+    "bornInSaoPaulo":"Born in São Paulo / SP on 11/30/1987, I have lived in Joinville / SC for more than a decade. My professional career has gone through different areas: I was a McDonald's attendant, I worked on the line of production for companies like Tigre and Docol, I was a salesman at Vivo, risk analyst at Opentech and driver. Currently, I work as an application driver, while I prepare to join in the technology area.",
+    "selfTaught":"Self-taught and passionate about technology: How I got here.",
+    "sinceIWasLittle":"Since I was little, I've always been curious about technology, but it was at the end of 2021 that I decided to turn this passion into a profession. Seeking a career change to provide a better life for my family, I began my studies in programming with Python. Little by little, I also delved deeper into frontend development, learning HTML, CSS and JavaScript.",
+    "inJuly2023":"In July 2023, I took an important step by entering the Systems Analysis and Development faculty, where I continue studying to this day. During this journey, I expanded my knowledge to include TypeScript, React, Next.js, Django, MySQL, Git and Redux. I learned most of what I know on my own, through YouTube videos and courses on Udemy. I am self-taught, I find it easy to learn new things and I always try to improve myself.",
+    "commitmentTo":"Commitment to Growth and Evolution.",
+    "myMainObjective":"My main objective is to gain a position in the development area, where I can combine my passion for technology with the need for a more balanced routine. I want to have a better quality of life and more time to spend with my two children, a 14-year-old girl and a 9-year-old boy. In addition to my experience in programming, over the years I have also taken courses in IT, computer maintenance, basic English and programming logic, which contributed to my technical base and my adaptability.",
+    "iAmADedicated":"I am a dedicated, hard-working and communicative person. I like working in a team and I believe that collaboration is essential for professional growth and the success of any project. I am always ready to learn, face challenges and evolve, as I know that technology is a dynamic and constantly changing field. This journey has just begun, and I am determined to build a solid and promising future in the world of development."
+  },
+  "Footer":{
+    "designedAndCodedBy":"Designed and coded by"
   }
 }

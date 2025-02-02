@@ -1,16 +1,18 @@
 import { Link } from "@/i18n/routing";
 import { FaLinkedin, FaGithub, FaInstagram, FaWhatsapp } from "react-icons/fa";
 import { SiFrontendmentor } from "react-icons/si";
+import { useTranslations } from "next-intl";
 
 const currentYear = new Date().getFullYear()
 
 const Footer = () => {
+  const t = useTranslations("Footer");
   return (
     <div className="flex justify-center items-center py-5 md:py-8 bg-colorBgNavLight dark:bg-colorBgNavDark text-colorTextLight dark:text-colorTextDark px-5">
       <div className="flex flex-col md:flex-row text-center items-center justify-between gap-4 w-[1220px] ">
         <div>
           <h4>
-            © {currentYear} | Projetado e codificado por{" "}
+            © {currentYear} | {t('designedAndCodedBy')}{" "}
             <span className="text-colorHighlightsLight dark:text-colorHighlightsDark">
               Thiago Alves
             </span>
