@@ -7,7 +7,7 @@ const SkillsHome = () => {
   return (
     <div className="dark:bg-colorBg3Dark bg-colorBg3Light flex flex-col items-center justify-center w-full pt-16 md:pt-16 dark:text-colorTextDark text-colorTextLight min-h-screen pb-8">
         <div className="flex px-4 lg:px-0 items-start mb-20 text-5xl font-semibold w-full max-w-[1204px]">
-          <h2 className="w-2/4  pb-1 border-b-4 dark:border-colorHighlightsDark border-colorHighlightsLight">
+          <h2 className="w-full sm:w-2/4 text-center sm:text-left  pb-1 border-b-4 dark:border-colorHighlightsDark border-colorHighlightsLight">
             {t('skills')}
           </h2>
         </div>

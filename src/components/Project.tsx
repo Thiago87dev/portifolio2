@@ -2,6 +2,7 @@ import Image from "next/image";
 import Button from "./Button";
 import Link from "next/link";
 import { useTranslations } from "next-intl";
+import ExpandebleText from "./ExpandebleText";
 
 interface IconsProps {
   icon: React.ReactNode;
@@ -30,8 +31,8 @@ const Project = ({ data, imgSide }: ProjectProps) => {
   const t2 = useTranslations("Projects");
 
   return (
-    <div className="flex lg:w-[1204px] gap-8 lg:justify-between justify-center h-full px-4 lg:px-0">
-      <div className="flex flex-col lg:flex-row gap-8">
+    <div className="flex lg:w-[1204px] gap-8 lg:justify-between justify-center  h-full px-4 lg:px-0">
+      <div className="flex flex-col lg:flex-row lg:items-center gap-8">
         {imgSide === "left" && (
           <div className=" lg:w-1/2 ">
             <Link target="_blank" href={data.hrefSite}>
@@ -45,15 +46,20 @@ const Project = ({ data, imgSide }: ProjectProps) => {
             </Link>
           </div>
         )}
-        <div className="flex flex-col justify-around lg:w-1/2 overflow-hidden ">
-          <div className="flex flex-col justify-around w-full min-h-96">
-            <h1 className="text-6xl font-bold">{data.title}</h1>
-            <p className="text-xl max-w-[678px]">
-              {t2(
-                data.title.toLowerCase().replace(/\s+/g, "_").replace(/\./g, "")
-              )}
-            </p>
-            <ul className="flex text-3xl w-full gap-3">
+        <div className="flex flex-col  justify-around lg:w-1/2 overflow-hidden ">
+          <div className="flex flex-col justify-around gap-5 w-full min-h-96">
+            <h1 className="text-4xl md:text-6xl text-center sm:text-left font-bold">{data.title}</h1>
+            <div className="text-lg md:text-xl max-w-[678px]">
+              <ExpandebleText
+                text={t2(
+                  data.title
+                    .toLowerCase()
+                    .replace(/\s+/g, "_")
+                    .replace(/\./g, "")
+                )}
+              />
+            </div>
+            <ul className="flex justify-center sm:justify-start text-3xl w-full gap-3">
               {data.icons.map((item) => (
                 <li
                   key={item.title}

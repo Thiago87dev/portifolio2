@@ -12,7 +12,7 @@ const AboutHome = () => {
       <div className="flex flex-col gap-8 max-w-[1204px] px-4 lg:px-0">
         <div className="mb-20 ">
           <div className="flex  items-start mb-4 text-5xl font-semibold w-full max-w-[1204px]">
-            <h2 className="w-full sm:w-2/4  pb-1 border-b-4 dark:border-colorHighlightsDark border-colorHighlightsLight">
+            <h2 className="w-full sm:w-2/4 text-center sm:text-left  pb-1 border-b-4 dark:border-colorHighlightsDark border-colorHighlightsLight">
               {t("aboutMe")}
             </h2>
           </div>
@@ -30,7 +30,7 @@ const AboutHome = () => {
                 <h2 className="text-2xl font-semibold mb-2">
                   {t("communication")}
                 </h2>
-                <p className="w-2/3">{t("communicationText")}</p>
+                <p className="w-full sm:w-2/3 pr-1">{t("communicationText")}</p>
               </div>
             </div>
             <hr className="w-4/5 border-gray-700" />
@@ -40,7 +40,7 @@ const AboutHome = () => {
               </div>
               <div>
                 <h2 className="text-2xl font-semibold mb-2">{t("teamwork")}</h2>
-                <p className="w-2/3">{t("teamworkText")}</p>
+                <p className="w-full sm:w-2/3 pr-1">{t("teamworkText")}</p>
               </div>
             </div>
             <hr className="w-4/5 border-gray-700" />
@@ -52,7 +52,7 @@ const AboutHome = () => {
                 <h2 className="text-2xl font-semibold mb-2">
                   {t("troubleshooting")}
                 </h2>
-                <p className="w-2/3">{t("troubleshootingText")}</p>
+                <p className="w-full sm:w-2/3 pr-1">{t("troubleshootingText")}</p>
               </div>
             </div>
             <hr className="w-4/5 border-gray-700" />
