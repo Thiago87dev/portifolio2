@@ -1,7 +1,7 @@
 "use client";
 import { ChangeEvent, useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
-import Button from "./Button";
+import Button from "../Button";
 
 interface FormData {
   name: string;
@@ -103,9 +103,9 @@ export const ContactForm = () => {
   };
 
   return (
-    <div className="dark:text-colorTextDark text-colorTextLight w-1/2">
+    <div className="dark:text-colorTextDark text-colorTextLight w-full sm:w-[80%] md:w-1/2 mb-20">
       {hasSent ? (
-        <div className="flex flex-col items-center justify-center bg-colorBgLight dark:bg-colorBgDark p-10 h-[570px] rounded-br-[55px] gap-8">
+        <div className="flex flex-col items-center justify-center bg-colorBgLight dark:bg-colorBgDark sm:p-10 md:h-[570px] rounded-br-[55px] gap-8">
           <h2 className="text-3xl font-semibold text-center">
             Muito obrigado pelo seu contato {formData.name}! 🎉🎉
           </h2>
@@ -127,7 +127,7 @@ export const ContactForm = () => {
         <form
           ref={form}
           onSubmit={sendEmail}
-          className="flex flex-col bg-colorBgLight dark:bg-colorBgDark p-10 h-[570px] rounded-br-[55px] gap-8"
+          className="flex flex-col bg-colorBgLight dark:bg-colorBgDark p-4 sm:p-10 h-[570px] rounded-br-[55px] gap-8"
         >
           <div className="flex flex-col">
             <label className="italic">Nome</label>
