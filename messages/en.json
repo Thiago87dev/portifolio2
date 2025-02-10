@@ -84,5 +84,20 @@
   },
   "Footer":{
     "designedAndCodedBy":"Designed and coded by"
+  },
+  "Contact":{
+    "letsBuild":"Let's build something amazing together!",
+    "letsTalk":"Let's Talk!",
+    "ifYouLikedMyWork":"If you liked my work and want to talk about a project, partnership or any other opportunity, feel free to get in touch!",
+    "imAlwaysOpenTo":"I'm always open to new opportunities and collaborations and I'm a developer passionate about creating intuitive interfaces and high-performance web experiences. If you're looking for a professional to strengthen your team or develop a new project, get in touch. I'll respond as soon as possible and I can't wait to work together!",
+    "name":"Name",
+    "subject":"Subject",
+    "message":"Message",
+    "tksForYourContact":"Thank you very much for your contact",
+    "yourMessageIsAlready":"Your message is already on my priority list! I'll reply to you soon!",
+    "back":"Back",
+    "sendMessage":"Send message",
+    "address":"Address",
+    "phoneNumber":"Phone number"
   }
 }

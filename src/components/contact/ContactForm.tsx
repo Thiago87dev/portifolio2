@@ -2,6 +2,7 @@
 import { ChangeEvent, useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import Button from "../Button";
+import { useTranslations } from "next-intl";
 
 interface FormData {
   name: string;
@@ -18,6 +19,7 @@ interface FormErros {
 }
 
 export const ContactForm = () => {
+  const t = useTranslations("Contact");
   const [hasSent, setHasSent] = useState(false);
   const [formData, setFormData] = useState<FormData>({
     name: "",
@@ -107,11 +109,10 @@ export const ContactForm = () => {
       {hasSent ? (
         <div className="flex flex-col items-center justify-center bg-colorBgLight dark:bg-colorBgDark sm:p-10 md:h-[570px] rounded-br-[55px] gap-8">
           <h2 className="text-3xl font-semibold text-center">
-            Muito obrigado pelo seu contato {formData.name}! 🎉🎉
+            {t('tksForYourContact')} {formData.name}! 🎉🎉
           </h2>
           <h2 className="text-3xl font-semibold text-center">
-            Sua mensagem já está na minha lista de prioridades! Em breve te
-            respondo! 📩
+            {t('yourMessageIsAlready')} 📩
           </h2>
           <div
             onClick={() => {
@@ -120,7 +121,7 @@ export const ContactForm = () => {
             }}
             className="w-1/2"
           >
-            <Button title="Voltar" />
+            <Button title={t('back')} />
           </div>
         </div>
       ) : (
@@ -130,7 +131,7 @@ export const ContactForm = () => {
           className="flex flex-col bg-colorBgLight dark:bg-colorBgDark p-4 sm:p-10 h-[570px] rounded-br-[55px] gap-8"
         >
           <div className="flex flex-col">
-            <label className="italic">Nome</label>
+            <label className="italic">{t('name')}</label>
             <input
               value={formData.name}
               onChange={handleInputChange}
@@ -152,7 +153,7 @@ export const ContactForm = () => {
             {errors.email && <p style={{ color: "red" }}>{errors.email}</p>}
           </div>
           <div className="flex flex-col">
-            <label className="italic">Assunto</label>
+            <label className="italic">{t('subject')}</label>
             <input
               value={formData.subject}
               onChange={handleInputChange}
@@ -163,7 +164,7 @@ export const ContactForm = () => {
             {errors.subject && <p style={{ color: "red" }}>{errors.subject}</p>}
           </div>
           <div className="flex flex-col">
-            <label className="italic">Mensagem</label>
+            <label className="italic">{t('message')}</label>
             <textarea
               name="message"
               value={formData.message}
@@ -175,7 +176,7 @@ export const ContactForm = () => {
           <div className="flex flex-col w-full dark:bg-colorHighlightsDark bg-colorHighlightsLight text-colorTextDark dark:text-colorTextLight rounded-full p-1.5  cursor-pointer hover:dark:bg-colorHighlightsLight hover:dark:text-colorTextDark hover:bg-colorHighlightsDark hover:text-colorTextLight">
             <input
               type="submit"
-              value="Enviar Mensagem"
+              value={t('sendMessage')}
               className="cursor-pointer font-bold"
             />
           </div>
