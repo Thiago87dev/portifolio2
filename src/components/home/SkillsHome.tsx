@@ -1,4 +1,4 @@
-import Skills from "@/components/Skills";
+import Skills from "@/components/home/Skills";
 import { skillList } from "@/Data";
 import { useTranslations } from "next-intl"; 
 

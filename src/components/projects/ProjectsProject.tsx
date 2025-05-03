@@ -1,5 +1,5 @@
 "use client";
-import Project from "../Project";
+import Project from "./Project";
 import { allProjects } from "@/Data";
 import { useEffect, useState } from "react";
 import { useTranslations } from "next-intl";

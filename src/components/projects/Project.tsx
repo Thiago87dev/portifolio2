@@ -1,8 +1,8 @@
 import Image from "next/image";
-import Button from "./Button";
+import Button from "../Button";
 import Link from "next/link";
 import { useTranslations } from "next-intl";
-import ExpandebleText from "./ExpandebleText";
+import ExpandebleText from "../ExpandebleText";
 
 interface IconsProps {
   icon: React.ReactNode;
@@ -19,6 +19,7 @@ interface DataProps {
   icons: IconsProps[];
   hrefSite: string;
   hrefRepo: string;
+  text: string;
 }
 
 interface ProjectProps {
@@ -48,16 +49,11 @@ const Project = ({ data, imgSide }: ProjectProps) => {
         )}
         <div className="flex flex-col  justify-around lg:w-1/2 overflow-hidden ">
           <div className="flex flex-col justify-around gap-5 w-full min-h-96">
-            <h1 className="text-4xl md:text-6xl text-center sm:text-left font-bold">{data.title}</h1>
+            <h1 className="text-4xl md:text-6xl text-center sm:text-left font-bold">
+              {t2(data.title)}
+            </h1>
             <div className="text-lg md:text-xl max-w-[678px]">
-              <ExpandebleText
-                text={t2(
-                  data.title
-                    .toLowerCase()
-                    .replace(/\s+/g, "_")
-                    .replace(/\./g, "")
-                )}
-              />
+              <ExpandebleText text={t2(data.text)} />
             </div>
             <ul className="flex justify-center sm:justify-start text-3xl w-full gap-3">
               {data.icons.map((item) => (

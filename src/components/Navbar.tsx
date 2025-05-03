@@ -20,23 +20,22 @@ const Navbar = () => {
 
   const t = useTranslations("Navbar");
 
-  const [activeItem, setActiveItem] = useState("");
-  const [activeMenu, setActiveMenu] = useState(false);
+  const [activeItem, setActiveItem] = useState(""); // which menu item is active
+  const [activeMenu, setActiveMenu] = useState(false); // open and close sandwich menu
   const [isScrolled, setIsScrolled] = useState(false);
 
-  useEffect(()=> {
-    const handleScroll = ()=>{
-      if(window.scrollY > 20){
-        setIsScrolled(true)
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 20) {
+        setIsScrolled(true);
       } else {
-        setIsScrolled(false)
+        setIsScrolled(false);
       }
-    }
-    window.addEventListener("scroll",handleScroll)
-    return () => window.removeEventListener("scroll", handleScroll)
-  })
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  });
 
-  
   useEffect(() => {
     if (darkMode) {
       document.documentElement.classList.add("dark");
@@ -44,7 +43,7 @@ const Navbar = () => {
       document.documentElement.classList.remove("dark");
     }
   }, [darkMode]);
-  
+
   useEffect(() => {
     // Sincroniza o item ativo com a rota atual
     if (pathname.includes("/projects")) {
@@ -57,7 +56,7 @@ const Navbar = () => {
       setActiveItem(t("home"));
     }
   }, [pathname, t]);
-  
+
   const toggleDarkMode = () => {
     dispatch(toggleDarkModeRedux());
   };
@@ -118,7 +117,11 @@ const Navbar = () => {
             </div>
           </div>
         </div>
-        <div className={`flex fixed py-5 justify-center ${isScrolled ? "mt-0": "mt-10"} bg-colorBgNavLight dark:bg-colorBgNavDark w-full border-y-[1px] border-solid border-gray-600`}>
+        <div
+          className={`flex fixed py-5 justify-center ${
+            isScrolled ? "mt-0" : "mt-10"
+          } bg-colorBgNavLight dark:bg-colorBgNavDark w-full border-y-[1px] border-solid border-gray-600`}
+        >
           <div className=" flex justify-between w-full max-w-[1220px] px-4">
             <div className="flex w-full  max-w-[1220px] justify-between items-center">
               <div className="flex justify-between min-w-[43%]">

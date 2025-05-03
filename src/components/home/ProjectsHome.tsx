@@ -1,5 +1,5 @@
 'use client'
-import Project from "../Project";
+import Project from "../projects/Project";
 import { allProjects } from "@/Data";
 import { Link } from "@/i18n/routing";
 import { ImArrowRight } from "react-icons/im";

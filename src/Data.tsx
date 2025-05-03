@@ -48,7 +48,8 @@ export const skillList = [
 
 export const allProjects = [
   {
-    title: "Countries of the world",
+    text:"projectText1", // for translation
+    title: "projectTitle1",
     imgPath: "/images/rest-contries.png",
     hrefRepo: "https://github.com/Thiago87dev/rest-countries",
     hrefSite: "https://rest-countries-drab-nu.vercel.app/",
@@ -66,7 +67,8 @@ export const allProjects = [
     ],
   },
   {
-    title: "E-commerce product page",
+    text:"projectText2", // for translation
+    title: "projectTitle2",
     imgPath: "/images/ecommerce-page.png",
     hrefRepo: "https://github.com/Thiago87dev/E-commerce-product-page",
     hrefSite: "https://e-commerce-product-page-gamma-neon.vercel.app/",
@@ -84,7 +86,8 @@ export const allProjects = [
     ],
   },
   {
-    title: "Product list with cart main",
+    text:"projectText3", // for translation
+    title: "projectTitle3",
     imgPath: "/images/product-list-with-cart-main.png",
     hrefRepo: "https://github.com/Thiago87dev/product-list-with-cart-main",
     hrefSite: "https://product-list-with-cart-main-ebbt.vercel.app/",
@@ -102,7 +105,8 @@ export const allProjects = [
     ],
   },
   {
-    title: "PokeNext",
+    text:"projectText4", // for translation
+    title: "pokeNext",
     imgPath: "/images/pokenext.png",
     hrefRepo: "https://github.com/Thiago87dev/pokeNext",
     hrefSite: "https://poke-next-one-xi.vercel.app/",
@@ -118,7 +122,8 @@ export const allProjects = [
     ],
   },
   {
-    title: "Figbruary",
+    text:"projectText5", // for translation
+    title: "figbruary",
     imgPath: "/images/figbruary.png",
     hrefRepo: "https://github.com/Thiago87dev/figbruary",
     hrefSite: "https://figbruary-five.vercel.app/",
@@ -135,7 +140,8 @@ export const allProjects = [
     ],
   },
   {
-    title: "My todo",
+    text:"projectText6", // for translation
+    title: "projectTitle6",
     imgPath: "/images/my-todo.png",
     hrefRepo: "https://github.com/Thiago87dev/my-todo",
     hrefSite: "https://my-todo-dun.vercel.app/",
@@ -150,7 +156,8 @@ export const allProjects = [
     ],
   },
   {
-    title: "Cpf Generator",
+    text:"projectText7", // for translation
+    title: "projectTitle7",
     imgPath: "/images/gera-cpf.png",
     hrefRepo: "https://github.com/Thiago87dev/geradorCPF",
     hrefSite: "https://thiago87dev.github.io/geradorCPF/",
@@ -162,8 +169,8 @@ export const allProjects = [
     ],
   },
   {
-    title: "Password Generator",
-    text: "Um sistema que gera senhas aleatórias, podendo escolher entre letras maiúsculas ou minusculas, números e símbolos, além de definir o tamanho da senha. ",
+    title: "projectTitle8",
+    text:"projectText8", // for translation
     imgPath: "/images/gera-senha.png",
     hrefRepo: "https://github.com/Thiago87dev/password-generator",
     hrefSite: "https://password-generator-hazel-phi.vercel.app/",
@@ -178,8 +185,8 @@ export const allProjects = [
     ],
   },
   {
-    title: "Uniasselvi Average",
-    text: "Um sistema que criei em parceria com um colega de faculdade para calcular a média das notas da Uniasselvi.",
+    text:"projectText9", // for translation
+    title: "projectTitle9",
     imgPath: "/images/media-uni.png",
     hrefRepo: "https://github.com/Thiago87dev/mediaUniasselvi",
     hrefSite: "https://thiago87dev.github.io/mediaUniasselvi/",
@@ -191,11 +198,11 @@ export const allProjects = [
     ],
   },
   {
-    title: "D.D.M.N",
-
+    text:"projectText10", // for translation
+    title: "ddmn",
     imgPath: "/images/ddmn.png",
     hrefRepo: "https://github.com/Thiago87dev/bricklayer-project",
-    hrefSite: "https://www.ddmn.app.br/",
+    hrefSite: "https://bricklayer-project.vercel.app/",
     alt: "Capa D.D.M.N Construtora",
     icons: [
       { title: "React", icon: <SiReact />, ...iconsStyles.react },
@@ -209,7 +216,8 @@ export const allProjects = [
     ],
   },
   {
-    title: "Best Movies",
+    text:"projectText11", // for translation
+    title: "projectTitle11",
     imgPath: "/images/img-best-movie.png",
     hrefRepo: "https://github.com/Thiago87dev/react_bestMovies",
     hrefSite: "https://thiago87dev.github.io/react_bestMovies/",
@@ -224,7 +232,8 @@ export const allProjects = [
     ],
   },
   {
-    title: "Bloggers",
+    text:"projectText12", // for translation
+    title: "bloggers",
     imgPath: "/images/img-blogger.png",
     hrefRepo: "https://github.com/Thiago87dev/my-blog",
     hrefSite: "https://my-blog-phi-green.vercel.app/",
