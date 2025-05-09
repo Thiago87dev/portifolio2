@@ -60,6 +60,7 @@
     "projectText10": "The first paid website I developed. The site has a projects page, an about the company page, and a contact page where users can send emails via a form. It also includes a dynamic map displaying the company address.",
     "projectText11": "A website where you can check the top 20 highest rated movies on the homepage. It also allows you to search for any movie and view the top 20 matching results. When you select a movie, you can access its full details. To make this experience dynamic, the project uses the IMDB API to obtain the information.",
     "projectText12": "A dynamic blog where you can register new posts, authors and categories, allowing for efficient organization of content.",
+    "projectText13": "BikeShop is a fictional e-commerce project built with React, Next.js, TypeScript, Redux, and Tailwind CSS. It includes features like filtering, sorting, grid/list layouts, reviews, a filterable blog, a Redux-based cart, and a checkout page. The site is fully responsive, supports both dark and light themes, and is available in Portuguese and English. It was a great opportunity to practice modern front-end concepts, state management, and building functional interfaces.",
     "projectText4": "A project that displays a list of Pokémon and their details, providing an interactive experience for fans of the franchise. To develop this site, I used an API, allowing me to obtain dynamic data about each Pokémon. The project was created following a tutorial on YouTube and served as practice for working with API integration.",
     "projectText5": "A website developed from a Figma project, using dynamic routes for navigation between pages. The goal was to transform a design into a functional application, exploring good structuring and styling practices.",
     "projectText6": "A task site that uses localStorage to store data. It allows you to add new tasks, mark them as completed, and delete them. In addition, the system displays the total number of tasks registered and how many have already been completed, providing a clear view of the user's progress.",
@@ -80,7 +81,9 @@
     "projectTitle9":"Uniasselvi Average",
     "ddmn":"D.D.M.N",
     "projectTitle11":"Best Movies",
-    "bloggers":"Bloggers"
+    "bloggers":"Bloggers",
+    "BikeShop":"BikeShop"
+    
   },
   "About": {
     "title": "Who Am I Beyond the Code",

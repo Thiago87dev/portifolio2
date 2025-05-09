@@ -60,6 +60,7 @@
     "projectText10": "O primeiro site remunerado que desenvolvi. O site conta com uma página de projetos, uma página sobre a empresa e uma página de contato, onde os usuários podem enviar e-mails por meio de um formulário. Além disso, inclui um mapa dinâmico exibindo o endereço da empresa.",
     "projectText11": "Um site onde você pode conferir os 20 filmes mais bem avaliados na página inicial. Além disso, permite pesquisar qualquer filme e visualizar os 20 melhores resultados correspondentes. Ao selecionar um filme, é possível acessar seus detalhes completos. Para tornar essa experiência dinâmica, o projeto utiliza a API do IMDB para obter as informações.",
     "projectText12": "Um blog dinâmico onde é possível cadastrar novos posts, autores e categorias, permitindo uma organização eficiente do conteúdo.",
+    "projectText13": "BikeShop é um projeto fictício de e-commerce desenvolvido com React, Next.js, TypeScript, Redux e Tailwind CSS. O site conta com funcionalidades como filtros, ordenação, layout em grid ou lista, sistema de reviews, blog com posts filtráveis, carrinho de compras com Redux e checkout. Além disso, é totalmente responsivo, tem modo claro e escuro e suporte a dois idiomas (português e inglês). Foi uma excelente oportunidade para praticar conceitos de front-end moderno, gerenciamento de estado e criação de interfaces funcionais.",
     "projectText4": "Um projeto que exibe uma lista de Pokémons e seus detalhes, proporcionando uma experiência interativa para os fãs da franquia. Para desenvolver esse site, utilizei o consumo de uma API, permitindo a obtenção de dados dinâmicos sobre cada Pokémon. O projeto foi criado seguindo um tutorial no YouTube e serviu como prática para trabalhar com integração de APIs.",
     "projectText5": "Um site desenvolvido a partir de um projeto no Figma, utilizando rotas dinâmicas para navegação entre as páginas. O objetivo foi transformar um design em uma aplicação funcional, explorando boas práticas de estruturação e estilização.",
     "projectText6": "Um site de tarefas que utiliza localStorage para armazenar os dados. Nele, é possível adicionar novas tarefas, marcar como concluídas e excluí-las. Além disso, o sistema exibe o total de tarefas cadastradas e quantas já foram concluídas, proporcionando uma visão clara do progresso do usuário.",
@@ -80,7 +81,8 @@
     "projectTitle9":"Média Uniasselvi",
     "ddmn":"D.D.M.N",
     "projectTitle11":"Melhores Filmes",
-    "bloggers":"Bloggers"
+    "bloggers":"Bloggers",
+    "BikeShop":"BikeShop"
   },
   "About": {
     "title": "Quem Sou Eu Além do Código",

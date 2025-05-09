@@ -48,16 +48,15 @@ export const skillList = [
 
 export const allProjects = [
   {
-    text:"projectText1", // for translation
-    title: "projectTitle1",
-    imgPath: "/images/rest-contries.png",
-    hrefRepo: "https://github.com/Thiago87dev/rest-countries",
-    hrefSite: "https://rest-countries-drab-nu.vercel.app/",
-    alt: "Capa Countries of the world",
+    text: "projectText12", // for translation
+    title: "bloggers",
+    imgPath: "/images/img-blogger.png",
+    hrefRepo: "https://github.com/Thiago87dev/my-blog",
+    hrefSite: "https://my-blog-phi-green.vercel.app/",
+    alt: "Capa blog",
     icons: [
       { title: "React", icon: <SiReact />, ...iconsStyles.react },
       { title: "Next", icon: <SiNextdotjs />, ...iconsStyles.nextJs },
-      { title: "Redux", icon: <SiRedux />, ...iconsStyles.redux },
       {
         title: "Typescript",
         icon: <SiTypescript />,
@@ -67,7 +66,7 @@ export const allProjects = [
     ],
   },
   {
-    text:"projectText2", // for translation
+    text: "projectText2", // for translation
     title: "projectTitle2",
     imgPath: "/images/ecommerce-page.png",
     hrefRepo: "https://github.com/Thiago87dev/E-commerce-product-page",
@@ -86,7 +85,7 @@ export const allProjects = [
     ],
   },
   {
-    text:"projectText3", // for translation
+    text: "projectText3", // for translation
     title: "projectTitle3",
     imgPath: "/images/product-list-with-cart-main.png",
     hrefRepo: "https://github.com/Thiago87dev/product-list-with-cart-main",
@@ -105,7 +104,7 @@ export const allProjects = [
     ],
   },
   {
-    text:"projectText4", // for translation
+    text: "projectText4", // for translation
     title: "pokeNext",
     imgPath: "/images/pokenext.png",
     hrefRepo: "https://github.com/Thiago87dev/pokeNext",
@@ -122,7 +121,7 @@ export const allProjects = [
     ],
   },
   {
-    text:"projectText5", // for translation
+    text: "projectText5", // for translation
     title: "figbruary",
     imgPath: "/images/figbruary.png",
     hrefRepo: "https://github.com/Thiago87dev/figbruary",
@@ -140,7 +139,7 @@ export const allProjects = [
     ],
   },
   {
-    text:"projectText6", // for translation
+    text: "projectText6", // for translation
     title: "projectTitle6",
     imgPath: "/images/my-todo.png",
     hrefRepo: "https://github.com/Thiago87dev/my-todo",
@@ -156,7 +155,7 @@ export const allProjects = [
     ],
   },
   {
-    text:"projectText7", // for translation
+    text: "projectText7", // for translation
     title: "projectTitle7",
     imgPath: "/images/gera-cpf.png",
     hrefRepo: "https://github.com/Thiago87dev/geradorCPF",
@@ -170,7 +169,7 @@ export const allProjects = [
   },
   {
     title: "projectTitle8",
-    text:"projectText8", // for translation
+    text: "projectText8", // for translation
     imgPath: "/images/gera-senha.png",
     hrefRepo: "https://github.com/Thiago87dev/password-generator",
     hrefSite: "https://password-generator-hazel-phi.vercel.app/",
@@ -185,7 +184,7 @@ export const allProjects = [
     ],
   },
   {
-    text:"projectText9", // for translation
+    text: "projectText9", // for translation
     title: "projectTitle9",
     imgPath: "/images/media-uni.png",
     hrefRepo: "https://github.com/Thiago87dev/mediaUniasselvi",
@@ -198,7 +197,7 @@ export const allProjects = [
     ],
   },
   {
-    text:"projectText10", // for translation
+    text: "projectText10", // for translation
     title: "ddmn",
     imgPath: "/images/ddmn.png",
     hrefRepo: "https://github.com/Thiago87dev/bricklayer-project",
@@ -216,7 +215,26 @@ export const allProjects = [
     ],
   },
   {
-    text:"projectText11", // for translation
+    text: "projectText13", // for translation
+    title: "BikeShop",
+    imgPath: "/images/bikeshop.png",
+    hrefRepo: "https://github.com/Thiago87dev/BikeShop",
+    hrefSite: "https://bike-shop-omega-snowy.vercel.app/",
+    alt: "Capa BikeShop",
+    icons: [
+      { title: "React", icon: <SiReact />, ...iconsStyles.react },
+      { title: "Next", icon: <SiNextdotjs />, ...iconsStyles.nextJs },
+      { title: "Redux", icon: <SiRedux />, ...iconsStyles.redux },
+      {
+        title: "Typescript",
+        icon: <SiTypescript />,
+        ...iconsStyles.typescript,
+      },
+      { title: "Tailwind", icon: <SiTailwindcss />, ...iconsStyles.tailwind },
+    ],
+  },
+  {
+    text: "projectText11", // for translation
     title: "projectTitle11",
     imgPath: "/images/img-best-movie.png",
     hrefRepo: "https://github.com/Thiago87dev/react_bestMovies",
@@ -232,15 +250,16 @@ export const allProjects = [
     ],
   },
   {
-    text:"projectText12", // for translation
-    title: "bloggers",
-    imgPath: "/images/img-blogger.png",
-    hrefRepo: "https://github.com/Thiago87dev/my-blog",
-    hrefSite: "https://my-blog-phi-green.vercel.app/",
-    alt: "Capa blog",
+    text: "projectText1", // for translation
+    title: "projectTitle1",
+    imgPath: "/images/rest-contries.png",
+    hrefRepo: "https://github.com/Thiago87dev/rest-countries",
+    hrefSite: "https://rest-countries-drab-nu.vercel.app/",
+    alt: "Capa Countries of the world",
     icons: [
       { title: "React", icon: <SiReact />, ...iconsStyles.react },
       { title: "Next", icon: <SiNextdotjs />, ...iconsStyles.nextJs },
+      { title: "Redux", icon: <SiRedux />, ...iconsStyles.redux },
       {
         title: "Typescript",
         icon: <SiTypescript />,
