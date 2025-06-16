@@ -70,6 +70,7 @@
     "projectText1": "An interactive project that displays detailed information about all countries in the world. It allows searches for specific countries, filtering by region (continent) and has a pagination system to facilitate navigation. In addition, it supports dark mode, providing a personalized experience for users. Data consumption was done from local storage, ensuring speed and efficiency. This project was developed as part of a Frontend Mentor challenge and aims to improve skills in frontend development data organization and user experience.",
     "projectText2": "An e-commerce page developed as part of a Frontend Mentor challenge. The project simulates the shopping experience, allowing users to add products to the cart, remove items, and view product images dynamically. The goal of this project is to improve the construction of interactive interfaces and the manipulation of states to provide a fluid and intuitive shopping experience.",
     "projectText3": "A project developed as part of a Frontend Mentor challenge, simulating an e-commerce experience. In it, users can add multiple products to the cart, with the total automatically calculated. In addition, it is possible to remove items individually or empty the cart completely. When completing the purchase, a confirmation popup is displayed, making the interaction more dynamic. The project is also fully responsive, ensuring a fluid experience on different devices.",
+    "projectText14":"The website of the NGO Escrevendo na Quebrada was developed with the aim of presenting the organization's mission, projects and results, in addition to facilitating communication with students, volunteers, supporters and potential donors.",
     "projectTitle1":"Countries of the World",
     "projectTitle2":"Product Page",
     "projectTitle3":"Product list with cart main",
@@ -82,7 +83,8 @@
     "ddmn":"D.D.M.N",
     "projectTitle11":"Best Movies",
     "bloggers":"Bloggers",
-    "BikeShop":"BikeShop"
+    "BikeShop":"BikeShop",
+    "projectTitle14":"Escrevendo na Quebrada"
     
   },
   "About": {

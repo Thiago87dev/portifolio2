@@ -70,6 +70,7 @@
     "projectText1": "Um projeto interativo que exibe informações detalhadas sobre todos os países do mundo. Ele permite buscas por países específicos, filtragem por região (continente) e conta com um sistema de paginação para facilitar a navegação. Além disso, oferece suporte a dark mode, proporcionando uma experiência personalizada para os usuários. O consumo de dados foi feito a partir de um armazenamento local, garantindo rapidez e eficiência. Este projeto foi desenvolvido como parte de um desafio do Frontend Mentor e tem como objetivo aprimorar habilidades em desenvolvimento frontend, organização de dados e experiência do usuário.",
     "projectText2": "Uma página de e-commerce desenvolvida como parte de um desafio do Frontend Mentor. O projeto simula a experiência de compra, permitindo que os usuários adicionem produtos ao carrinho, removam itens e visualizem as imagens do produto de forma dinâmica. O objetivo deste projeto é aprimorar a construção de interfaces interativas e a manipulação de estados para proporcionar uma experiência de compra fluida e intuitiva.",
     "projectText3": "Um projeto desenvolvido como parte de um desafio do Frontend Mentor, simulando uma experiência de e-commerce. Nele, os usuários podem adicionar diversos produtos ao carrinho, com cálculo automático do total. Além disso, é possível remover itens individualmente ou esvaziar o carrinho por completo.Ao finalizar a compra, uma popup de confirmação é exibida, tornando a interação mais dinâmica. O projeto também é totalmente responsivo, garantindo uma experiência fluida em diferentes dispositivos.",
+    "projectText14":"O site da ONG Escrevendo na Quebrada foi desenvolvido com o objetivo de apresentar a missão, os projetos e os resultados da organização, além de facilitar a comunicação com alunos, voluntários, apoiadores e possíveis doadores.",
     "projectTitle1":"Países do Mundo",
     "projectTitle2":"Página de Produtos",
     "projectTitle3":"Lista de produtos com carrinho",
@@ -82,7 +83,8 @@
     "ddmn":"D.D.M.N",
     "projectTitle11":"Melhores Filmes",
     "bloggers":"Bloggers",
-    "BikeShop":"BikeShop"
+    "BikeShop":"BikeShop",
+    "projectTitle14":"Escrevendo na Quebrada"
   },
   "About": {
     "title": "Quem Sou Eu Além do Código",

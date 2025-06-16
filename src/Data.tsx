@@ -48,6 +48,40 @@ export const skillList = [
 
 export const allProjects = [
   {
+    text: "projectText10", // for translation
+    title: "ddmn",
+    imgPath: "/images/ddmn.png",
+    hrefRepo: "https://github.com/Thiago87dev/bricklayer-project",
+    hrefSite: "https://bricklayer-project.vercel.app/",
+    alt: "Capa D.D.M.N Construtora",
+    icons: [
+      { title: "React", icon: <SiReact />, ...iconsStyles.react },
+      { title: "Next", icon: <SiNextdotjs />, ...iconsStyles.nextJs },
+      {
+        title: "Typescript",
+        icon: <SiTypescript />,
+        ...iconsStyles.typescript,
+      },
+      { title: "Tailwind", icon: <SiTailwindcss />, ...iconsStyles.tailwind },
+    ],
+  },
+  {
+    text: "projectText11", // for translation
+    title: "projectTitle11",
+    imgPath: "/images/img-best-movie.png",
+    hrefRepo: "https://github.com/Thiago87dev/react_bestMovies",
+    hrefSite: "https://thiago87dev.github.io/react_bestMovies/",
+    alt: "Capa site Best Movie",
+    icons: [
+      { title: "React", icon: <SiReact />, ...iconsStyles.react },
+      {
+        title: "Javascript",
+        icon: <SiJavascript />,
+        ...iconsStyles.javascript,
+      },
+    ],
+  },
+  {
     text: "projectText12", // for translation
     title: "bloggers",
     imgPath: "/images/img-blogger.png",
@@ -196,13 +230,14 @@ export const allProjects = [
       { title: "Javascipt", icon: <SiJavascript />, ...iconsStyles.javascript },
     ],
   },
+  // Homepage
   {
-    text: "projectText10", // for translation
-    title: "ddmn",
-    imgPath: "/images/ddmn.png",
-    hrefRepo: "https://github.com/Thiago87dev/bricklayer-project",
-    hrefSite: "https://bricklayer-project.vercel.app/",
-    alt: "Capa D.D.M.N Construtora",
+    text: "projectText14", // for translation
+    title: "projectTitle14",
+    imgPath: "/images/eq.png",
+    hrefRepo: "https://github.com/Thiago87dev/escrevendo-na-quebrada",
+    hrefSite: "https://www.escrevendonaquebrada.org.br/",
+    alt: "Capa Escrevendo na quebrada",
     icons: [
       { title: "React", icon: <SiReact />, ...iconsStyles.react },
       { title: "Next", icon: <SiNextdotjs />, ...iconsStyles.nextJs },
@@ -231,22 +266,6 @@ export const allProjects = [
         ...iconsStyles.typescript,
       },
       { title: "Tailwind", icon: <SiTailwindcss />, ...iconsStyles.tailwind },
-    ],
-  },
-  {
-    text: "projectText11", // for translation
-    title: "projectTitle11",
-    imgPath: "/images/img-best-movie.png",
-    hrefRepo: "https://github.com/Thiago87dev/react_bestMovies",
-    hrefSite: "https://thiago87dev.github.io/react_bestMovies/",
-    alt: "Capa site Best Movie",
-    icons: [
-      { title: "React", icon: <SiReact />, ...iconsStyles.react },
-      {
-        title: "Javascript",
-        icon: <SiJavascript />,
-        ...iconsStyles.javascript,
-      },
     ],
   },
   {
