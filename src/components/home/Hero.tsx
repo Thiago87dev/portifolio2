@@ -1,15 +1,19 @@
+'use client'
 import Button from "@/components/Button";
 import Image from "next/image";
-import { Poppins } from "next/font/google";
+import { poppins } from "@/fonts";
 import { useTranslations } from "next-intl"; // declare this import
 
-const poppins = Poppins({
-  weight: ["400", "600", "700"],
-  subsets: ["latin"],
-});
-
 const Hero = () => {
-    const t = useTranslations("Home"); // declare the hook passing into parameter a context name
+  const t = useTranslations("Home"); // declare the hook passing into parameter a context name
+
+  const handleDownloadClick = async () => {
+    const link = document.createElement("a")
+    link.href = '/Thiago_Gomes_da_Silva_Alves.pdf'
+    link.download = 'Thiago_Gomes_da_Silva_Alves.pdf'
+    link.click()
+  };
+
   return (
     <div className="dark:bg-colorBg2Dark bg-colorBgLight flex justify-center w-full pt-16 md:pt-32 dark:text-colorTextDark text-colorTextLight min-h-screen">
       <div className="w-[1204px] flex items-center md:items-start flex-col md:flex-row justify-between px-2 lg:px-0">
@@ -31,7 +35,10 @@ const Hero = () => {
               <p className="mt-10 text-lg">{t("description")}</p>
             </div>
             <div className="flex flex-col w-full mt-10 items-end">
-              <div className="w-full sm:w-[380px]  md:w-[266px] lg:w-[380px]">
+              <div
+                onClick={handleDownloadClick}
+                className="w-full sm:w-[380px]  md:w-[266px] lg:w-[380px]"
+              >
                 <Button title={t("downloadResume")} />
               </div>
             </div>
