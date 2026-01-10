@@ -30,7 +30,7 @@ const AddressContact = () => {
           </div>
           <div>
             <h3 className="font-bold text-xl">{t('phoneNumber')}</h3>
-            <p>(47) 98912-4895</p>
+            <p>(47) 99999-9999</p>
           </div>
         </div>
       </div>
