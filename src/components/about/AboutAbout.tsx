@@ -34,7 +34,7 @@ const AboutAbout = () => {
             <div>
               <Image
                 alt="cabeça"
-                src={"/images/photo3.jpeg"}
+                src={"/images/eu-avatar.png"}
                 width={300}
                 height={300}
                 className="w-36 h-36 rounded-full"

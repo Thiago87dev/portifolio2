@@ -230,14 +230,33 @@ export const allProjects = [
       { title: "Javascipt", icon: <SiJavascript />, ...iconsStyles.javascript },
     ],
   },
+  {
+    text: "projectText1", // for translation
+    title: "projectTitle1",
+    imgPath: "/images/rest-contries.png",
+    hrefRepo: "https://github.com/Thiago87dev/rest-countries",
+    hrefSite: "https://rest-countries-drab-nu.vercel.app/",
+    alt: "Capa Countries of the world",
+    icons: [
+      { title: "React", icon: <SiReact />, ...iconsStyles.react },
+      { title: "Next", icon: <SiNextdotjs />, ...iconsStyles.nextJs },
+      { title: "Redux", icon: <SiRedux />, ...iconsStyles.redux },
+      {
+        title: "Typescript",
+        icon: <SiTypescript />,
+        ...iconsStyles.typescript,
+      },
+      { title: "Tailwind", icon: <SiTailwindcss />, ...iconsStyles.tailwind },
+    ],
+  },
   // Homepage
   {
-    text: "projectText14", // for translation
-    title: "projectTitle14",
-    imgPath: "/images/eq.png",
-    hrefRepo: "https://github.com/Thiago87dev/escrevendo-na-quebrada",
-    hrefSite: "https://www.escrevendonaquebrada.org.br/",
-    alt: "Capa Escrevendo na quebrada",
+    text: "projectText15", // for translation
+    title: "projectTitle15",
+    imgPath: "/images/aj-uniao.png",
+    hrefRepo: "https://github.com/Thiago87dev/aj-uniao",
+    hrefSite: "https://aj-uniao.vercel.app/",
+    alt: "Capa Mecanica AJ União",
     icons: [
       { title: "React", icon: <SiReact />, ...iconsStyles.react },
       { title: "Next", icon: <SiNextdotjs />, ...iconsStyles.nextJs },
@@ -269,16 +288,15 @@ export const allProjects = [
     ],
   },
   {
-    text: "projectText1", // for translation
-    title: "projectTitle1",
-    imgPath: "/images/rest-contries.png",
-    hrefRepo: "https://github.com/Thiago87dev/rest-countries",
-    hrefSite: "https://rest-countries-drab-nu.vercel.app/",
-    alt: "Capa Countries of the world",
+    text: "projectText14", // for translation
+    title: "projectTitle14",
+    imgPath: "/images/eq.png",
+    hrefRepo: "https://github.com/Thiago87dev/escrevendo-na-quebrada",
+    hrefSite: "https://www.escrevendonaquebrada.org.br/",
+    alt: "Capa Escrevendo na quebrada",
     icons: [
       { title: "React", icon: <SiReact />, ...iconsStyles.react },
       { title: "Next", icon: <SiNextdotjs />, ...iconsStyles.nextJs },
-      { title: "Redux", icon: <SiRedux />, ...iconsStyles.redux },
       {
         title: "Typescript",
         icon: <SiTypescript />,

@@ -71,6 +71,7 @@
     "projectText2": "Uma página de e-commerce desenvolvida como parte de um desafio do Frontend Mentor. O projeto simula a experiência de compra, permitindo que os usuários adicionem produtos ao carrinho, removam itens e visualizem as imagens do produto de forma dinâmica. O objetivo deste projeto é aprimorar a construção de interfaces interativas e a manipulação de estados para proporcionar uma experiência de compra fluida e intuitiva.",
     "projectText3": "Um projeto desenvolvido como parte de um desafio do Frontend Mentor, simulando uma experiência de e-commerce. Nele, os usuários podem adicionar diversos produtos ao carrinho, com cálculo automático do total. Além disso, é possível remover itens individualmente ou esvaziar o carrinho por completo.Ao finalizar a compra, uma popup de confirmação é exibida, tornando a interação mais dinâmica. O projeto também é totalmente responsivo, garantindo uma experiência fluida em diferentes dispositivos.",
     "projectText14":"O site da ONG Escrevendo na Quebrada foi desenvolvido com o objetivo de apresentar a missão, os projetos e os resultados da organização, além de facilitar a comunicação com alunos, voluntários, apoiadores e possíveis doadores.",
+    "projectText15":"A AJ União Auto Center é uma landing page desenvolvida para apresentar os serviços da oficina de forma moderna, clara e profissional. O projeto foi criado utilizando Next.js, React, TypeScript e Tailwind CSS, com foco em responsividade, organização das informações e uma boa experiência para o usuário. O site conta com seções para apresentação da oficina, serviços oferecidos, diferenciais, avaliações de clientes, localização com mapa e formas de contato, incluindo acesso rápido ao WhatsApp. Durante o desenvolvimento, utilizei Inteligência Artificial como ferramenta de apoio, principalmente para auxiliar na criação de ideias, estruturação do layout e desenvolvimento de algumas partes do projeto. Todo o processo também envolveu ajustes, personalizações e decisões de design e desenvolvimento feitas por mim.",
     "projectTitle1":"Países do Mundo",
     "projectTitle2":"Página de Produtos",
     "projectTitle3":"Lista de produtos com carrinho",
@@ -84,7 +85,8 @@
     "projectTitle11":"Melhores Filmes",
     "bloggers":"Bloggers",
     "BikeShop":"BikeShop",
-    "projectTitle14":"Escrevendo na Quebrada"
+    "projectTitle14":"Escrevendo na Quebrada",
+    "projectTitle15":"AJ União"
   },
   "About": {
     "title": "Quem Sou Eu Além do Código",
